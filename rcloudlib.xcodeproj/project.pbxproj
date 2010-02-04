@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		942C1EDD104867040076A2A0 /* RCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 942C1EDB104867040076A2A0 /* RCLabel.m */; };
+		942C1EDE104867040076A2A0 /* UITextView-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 942C1EDC104867040076A2A0 /* UITextView-Expanded.m */; };
+		942C1EE1104867170076A2A0 /* RCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 942C1EDF104867170076A2A0 /* RCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		942C1EE2104867170076A2A0 /* UITextView-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 942C1EE0104867170076A2A0 /* UITextView-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		942C1F431048686F0076A2A0 /* rcloudlibconstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 942C1F421048686F0076A2A0 /* rcloudlibconstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		942C1F45104868DD0076A2A0 /* rcloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 942C1F44104868DD0076A2A0 /* rcloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946F785C1051996900F765D1 /* FieldEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F785B1051996900F765D1 /* FieldEditController.m */; };
+		946F785E1051997100F765D1 /* FieldEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = 946F785D1051997100F765D1 /* FieldEditController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946F789A1051A0A300F765D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F78991051A0A300F765D1 /* QuartzCore.framework */; };
+		948209D010460FCB0090483A /* UIViewController-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 948209CF10460FCB0090483A /* UIViewController-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948209D210460FD70090483A /* UIViewController-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 948209D110460FD70090483A /* UIViewController-Expanded.m */; };
+		94AFCF1810263F870025821E /* ImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF1710263F870025821E /* ImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94AFCF1A10263F8F0025821E /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */; };
+		94AFCF35102642D40025821E /* UIImage-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF34102642D40025821E /* UIImage-Expanded.m */; };
+		94AFCF37102642DB0025821E /* UIImage-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF36102642DB0025821E /* UIImage-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94AFCF3D102643710025821E /* rcloudlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF3C102643710025821E /* rcloudlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94AFD24A10268FEB0025821E /* rcloudlibcontrols.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF3E102643AD0025821E /* rcloudlibcontrols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FA8A1B1024DECA009B89BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FA8A1A1024DECA009B89BB /* UIKit.framework */; };
+		94FA8AA41024E28C009B89BB /* UIView-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8AA31024E28C009B89BB /* UIView-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FA8AA71024E2A6009B89BB /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FA8AA81024E2A6009B89BB /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8AA61024E2A6009B89BB /* Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FA8B2D1024E999009B89BB /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA8B2A1024E999009B89BB /* UIColor-Expanded.m */; };
+		94FA8B2E1024E999009B89BB /* UIView-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA8B2B1024E999009B89BB /* UIView-Expanded.m */; };
+		94FA8B2F1024E999009B89BB /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA8B2C1024E999009B89BB /* Util.m */; };
+		94FA8B311024EA00009B89BB /* CustomFontBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA8B301024EA00009B89BB /* CustomFontBase.m */; };
+		94FA8B331024EA08009B89BB /* CustomFontBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8B321024EA08009B89BB /* CustomFontBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FA8B521024ECAE009B89BB /* ImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8B511024ECAE009B89BB /* ImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FA8B541024ECB7009B89BB /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FA8B531024ECB7009B89BB /* ImageButton.m */; };
+		AA747D9F0F9514B9006C5449 /* rcloudlib_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* rcloudlib_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94094276110A468500F5D00A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		942C1EDB104867040076A2A0 /* RCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCLabel.m; path = Classes/RCLabel.m; sourceTree = "<group>"; };
+		942C1EDC104867040076A2A0 /* UITextView-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView-Expanded.m"; path = "Classes/UITextView-Expanded.m"; sourceTree = "<group>"; };
+		942C1EDF104867170076A2A0 /* RCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLabel.h; sourceTree = "<group>"; };
+		942C1EE0104867170076A2A0 /* UITextView-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView-Expanded.h"; sourceTree = "<group>"; };
+		942C1F421048686F0076A2A0 /* rcloudlibconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlibconstants.h; sourceTree = "<group>"; };
+		942C1F44104868DD0076A2A0 /* rcloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloud.h; sourceTree = "<group>"; };
+		946F785B1051996900F765D1 /* FieldEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FieldEditController.m; path = Classes/FieldEditController.m; sourceTree = "<group>"; };
+		946F785D1051997100F765D1 /* FieldEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldEditController.h; sourceTree = "<group>"; };
+		946F7866105199CB00F765D1 /* 1_bar_table_transcorners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1_bar_table_transcorners.png; path = Images/1_bar_table_transcorners.png; sourceTree = "<group>"; };
+		946F78991051A0A300F765D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		948209CF10460FCB0090483A /* UIViewController-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController-Expanded.h"; sourceTree = "<group>"; };
+		948209D110460FD70090483A /* UIViewController-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController-Expanded.m"; path = "Classes/UIViewController-Expanded.m"; sourceTree = "<group>"; };
+		94854581111A4A6900B8901F /* ControllerTemplates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ControllerTemplates.txt; sourceTree = "<group>"; };
+		94854582111A4A6900B8901F /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		94854583111A4A6900B8901F /* UIControlTemplates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIControlTemplates.txt; sourceTree = "<group>"; };
+		94AFCF1710263F870025821E /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
+		94AFCF1910263F8F0025821E /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePickerController.m; path = Classes/ImagePickerController.m; sourceTree = "<group>"; };
+		94AFCF34102642D40025821E /* UIImage-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Expanded.m"; path = "Classes/UIImage-Expanded.m"; sourceTree = "<group>"; };
+		94AFCF36102642DB0025821E /* UIImage-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Expanded.h"; sourceTree = "<group>"; };
+		94AFCF3C102643710025821E /* rcloudlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlib.h; sourceTree = "<group>"; };
+		94AFCF3E102643AD0025821E /* rcloudlibcontrols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlibcontrols.h; sourceTree = "<group>"; };
+		94FA8A1A1024DECA009B89BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94FA8AA31024E28C009B89BB /* UIView-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView-Expanded.h"; sourceTree = "<group>"; };
+		94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		94FA8AA61024E2A6009B89BB /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		94FA8B2A1024E999009B89BB /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "Classes/UIColor-Expanded.m"; sourceTree = "<group>"; };
+		94FA8B2B1024E999009B89BB /* UIView-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView-Expanded.m"; path = "Classes/UIView-Expanded.m"; sourceTree = "<group>"; };
+		94FA8B2C1024E999009B89BB /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = Classes/Util.m; sourceTree = "<group>"; };
+		94FA8B301024EA00009B89BB /* CustomFontBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomFontBase.m; path = Classes/CustomFontBase.m; sourceTree = "<group>"; };
+		94FA8B321024EA08009B89BB /* CustomFontBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontBase.h; sourceTree = "<group>"; };
+		94FA8B511024ECAE009B89BB /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
+		94FA8B531024ECB7009B89BB /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageButton.m; path = Classes/ImageButton.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* rcloudlib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlib_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* librcloudlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librcloudlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				94FA8A1B1024DECA009B89BB /* UIKit.framework in Frameworks */,
+				946F789A1051A0A300F765D1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* librcloudlib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* rcloudlib */ = {
+			isa = PBXGroup;
+			children = (
+				94FA8AA21024E246009B89BB /* include */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				946F7865105199B600F765D1 /* Resources */,
+				94094274110A464200F5D00A /* Other Files */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = rcloudlib;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				946F78991051A0A300F765D1 /* QuartzCore.framework */,
+				94FA8A1A1024DECA009B89BB /* UIKit.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94FA8B2C1024E999009B89BB /* Util.m */,
+				948209CE10460FB30090483A /* Class Extensions */,
+				94AFCF39102642F50025821E /* Controls */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* rcloudlib_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		94094274110A464200F5D00A /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				94854582111A4A6900B8901F /* License.txt */,
+				94094276110A468500F5D00A /* Readme.txt */,
+				94854581111A4A6900B8901F /* ControllerTemplates.txt */,
+				94854583111A4A6900B8901F /* UIControlTemplates.txt */,
+			);
+			name = "Other Files";
+			sourceTree = "<group>";
+		};
+		946F7865105199B600F765D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				946F7866105199CB00F765D1 /* 1_bar_table_transcorners.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		948209CC10460F820090483A /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				942C1F44104868DD0076A2A0 /* rcloud.h */,
+				94AFCF3C102643710025821E /* rcloudlib.h */,
+				94AFCF3E102643AD0025821E /* rcloudlibcontrols.h */,
+				942C1F421048686F0076A2A0 /* rcloudlibconstants.h */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		948209CD10460F950090483A /* Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				942C1EE0104867170076A2A0 /* UITextView-Expanded.h */,
+				948209CF10460FCB0090483A /* UIViewController-Expanded.h */,
+				94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */,
+				94FA8AA31024E28C009B89BB /* UIView-Expanded.h */,
+				94AFCF36102642DB0025821E /* UIImage-Expanded.h */,
+			);
+			name = "Class Extensions";
+			sourceTree = "<group>";
+		};
+		948209CE10460FB30090483A /* Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				942C1EDC104867040076A2A0 /* UITextView-Expanded.m */,
+				948209D110460FD70090483A /* UIViewController-Expanded.m */,
+				94FA8B2A1024E999009B89BB /* UIColor-Expanded.m */,
+				94FA8B2B1024E999009B89BB /* UIView-Expanded.m */,
+				94AFCF34102642D40025821E /* UIImage-Expanded.m */,
+			);
+			name = "Class Extensions";
+			sourceTree = "<group>";
+		};
+		94AFCF38102642E70025821E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				946F785D1051997100F765D1 /* FieldEditController.h */,
+				942C1EDF104867170076A2A0 /* RCLabel.h */,
+				94FA8B321024EA08009B89BB /* CustomFontBase.h */,
+				94AFCF1710263F870025821E /* ImagePickerController.h */,
+				94FA8B511024ECAE009B89BB /* ImageButton.h */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		94AFCF39102642F50025821E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				946F785B1051996900F765D1 /* FieldEditController.m */,
+				942C1EDB104867040076A2A0 /* RCLabel.m */,
+				94FA8B301024EA00009B89BB /* CustomFontBase.m */,
+				94AFCF1910263F8F0025821E /* ImagePickerController.m */,
+				94FA8B531024ECB7009B89BB /* ImageButton.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		94FA8AA21024E246009B89BB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				948209CC10460F820090483A /* Public */,
+				94FA8AA61024E2A6009B89BB /* Util.h */,
+				948209CD10460F950090483A /* Class Extensions */,
+				94AFCF38102642E70025821E /* Controls */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* rcloudlib_Prefix.pch in Headers */,
+				94FA8AA41024E28C009B89BB /* UIView-Expanded.h in Headers */,
+				94FA8AA71024E2A6009B89BB /* UIColor-Expanded.h in Headers */,
+				94FA8AA81024E2A6009B89BB /* Util.h in Headers */,
+				94FA8B331024EA08009B89BB /* CustomFontBase.h in Headers */,
+				94FA8B521024ECAE009B89BB /* ImageButton.h in Headers */,
+				94AFCF1810263F870025821E /* ImagePickerController.h in Headers */,
+				94AFCF37102642DB0025821E /* UIImage-Expanded.h in Headers */,
+				94AFCF3D102643710025821E /* rcloudlib.h in Headers */,
+				94AFD24A10268FEB0025821E /* rcloudlibcontrols.h in Headers */,
+				948209D010460FCB0090483A /* UIViewController-Expanded.h in Headers */,
+				942C1EE1104867170076A2A0 /* RCLabel.h in Headers */,
+				942C1EE2104867170076A2A0 /* UITextView-Expanded.h in Headers */,
+				942C1F431048686F0076A2A0 /* rcloudlibconstants.h in Headers */,
+				942C1F45104868DD0076A2A0 /* rcloud.h in Headers */,
+				946F785E1051997100F765D1 /* FieldEditController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* rcloudlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "rcloudlib" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rcloudlib;
+			productName = rcloudlib;
+			productReference = D2AAC07E0554694100DB518D /* librcloudlib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "rcloudlib" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* rcloudlib */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* rcloudlib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FA8B2D1024E999009B89BB /* UIColor-Expanded.m in Sources */,
+				94FA8B2E1024E999009B89BB /* UIView-Expanded.m in Sources */,
+				94FA8B2F1024E999009B89BB /* Util.m in Sources */,
+				94FA8B311024EA00009B89BB /* CustomFontBase.m in Sources */,
+				94FA8B541024ECB7009B89BB /* ImageButton.m in Sources */,
+				94AFCF1A10263F8F0025821E /* ImagePickerController.m in Sources */,
+				94AFCF35102642D40025821E /* UIImage-Expanded.m in Sources */,
+				948209D210460FD70090483A /* UIViewController-Expanded.m in Sources */,
+				942C1EDD104867040076A2A0 /* RCLabel.m in Sources */,
+				942C1EDE104867040076A2A0 /* UITextView-Expanded.m in Sources */,
+				946F785C1051996900F765D1 /* FieldEditController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/rcloudlib.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = rcloudlib_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = rcloudlib;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/rcloudlib.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = rcloudlib_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = rcloudlib;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				PRODUCT_NAME = rcloud;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				PRODUCT_NAME = rcloud;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+		94FA8E7D102516C2009B89BB /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ryan Stubblefield";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				PRODUCT_NAME = rcloud;
+				PROVISIONING_PROFILE = "F08EDB4A-0FFC-4F5D-9090-29FA6A6138FD";
+				SDKROOT = iphoneos3.0;
+			};
+			name = AdHoc;
+		};
+		94FA8E7E102516C2009B89BB /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/rcloudlib.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = rcloudlib_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = rcloudlib;
+			};
+			name = AdHoc;
+		};
+		94FA8E7F102516C6009B89BB /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ryan Stubblefield";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				PRODUCT_NAME = rcloud;
+				PROVISIONING_PROFILE = "2AB7FEDD-D7ED-4144-8795-589F543F2327";
+				SDKROOT = iphoneos3.0;
+			};
+			name = AppStore;
+		};
+		94FA8E80102516C6009B89BB /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/rcloudlib.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = rcloudlib_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include";
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = rcloudlib;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "rcloudlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+				94FA8E7E102516C2009B89BB /* AdHoc */,
+				94FA8E80102516C6009B89BB /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "rcloudlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+				94FA8E7D102516C2009B89BB /* AdHoc */,
+				94FA8E7F102516C6009B89BB /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

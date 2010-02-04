@@ -1,0 +1,23 @@
+// these are templates for the most commonly filled in fields for the most common controls
+
+CGFloat width = 200.0f;
+CGFloat height = 20.0f;
+CGFloat x = ( self.view.frame.size.width / 2.0f ) - ( width / 2.0f ); // centered
+CGFloat y = self.view.frame.size.height - height - 20.0f;
+
+CGRect l_frame = CGRectMake(x, y, width, height);
+
+// UILabel
+UILabel* label = [[UILabel alloc] initWithFrame:l_frame];
+label.text = @"labeltext";
+label.font = [UIFont fontWithName:kLabelFont size:kLabelFontSize];
+label.textColor = [UIColor whiteColor];
+label.backgroundColor = [UIColor clearColor];
+label.numberOfLines = 1;
+label.textAlignment = UITextAlignmentCenter;
+
+// UIButton
+UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+button.frame = l_frame;
+[button setTitle:@"buttontitle" forState:UIControlStateNormal];
+[button addTarget:self action:@selector(buttonsTapped) forControlEvents:UIControlEventTouchUpInside];

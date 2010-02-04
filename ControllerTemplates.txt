@@ -1,0 +1,122 @@
+// ---------------
+// Singleton .h
+// ---------------
+
++(Klassname*)instance;
+
+
+// ---------------
+// Singleton .m
+// ---------------
+
+
+#pragma mark Singleton
+
+static Klassname *gInstance = NULL;
+
++ (Klassname *)instance
+{
+	@synchronized(self)
+	{
+    if (gInstance == NULL)
+		{
+			gInstance = [[self alloc] init];
+			[gInstance initLog];
+		}
+	}
+	return(gInstance);
+}
+
+
+
+// ---------------
+// View Control .h
+// ---------------
+
+// event handlers
+-(void)notifyxxx:(NSNotification*)notification;
+
+
+// ---------------
+// View Control .m
+// ---------------
+
+#pragma mark Initialization
+
+-(void)initControls
+{
+//	CGFloat h_buf = 10.0f;
+//	CGFloat inset = 10.0f;
+//	
+//	CGFloat x = inset;
+//	CGFloat y = inset;
+//	CGFloat width = 0.0f;
+//	CGFloat height = 0.0f;
+//	
+//	CGRect l_frame = CGRectMake(x, y, width, height);
+}
+
+-(id)init
+{
+	if ( self = [super init] )
+	{
+		[self initControls];
+	}
+	return self;
+}
+
+- (void)loadView 
+{
+	CGRect content_frame = [[UIScreen mainScreen] applicationFrame];
+	UIView *content_view = [[UIView alloc] initWithFrame:content_frame];
+//	UIView *content_view = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 45.0f)];
+	content_view.backgroundColor = [UIColor blackColor];
+	self.view = content_view;
+	[content_view release];
+}
+
+//-(void)initEvents
+//{
+//	//[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notify:) name:@"Event" object:notificationSender];	
+//}
+
+//-(void)stopEvents
+//{
+//	//[[NSNotificationCenter defaultCenter] removeObserver:self @"Event" object:notificationSender];
+//}
+
+-(void)addSubviews
+{
+//	[self.view addSubview:self._someview];
+}
+
+-(void)viewDidLoad 
+{
+	//	[self initEvents];
+	
+	[self addSubviews];
+	[super viewDidLoad];
+}
+
+- (void)didReceiveMemoryWarning 
+{
+	[super didReceiveMemoryWarning];
+}
+
+- (void)viewDidUnload 
+{
+}
+
+- (void)dealloc 
+{
+	//	[self stopEvents];
+	[super dealloc];
+}
+
+#pragma mark Singleton Methods
+
+#pragma mark Instance Methods
+
+#pragma mark Event Handlers
+#pragma mark Button Handlers
+
