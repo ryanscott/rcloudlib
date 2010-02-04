@@ -1,4 +1,19 @@
-Header Search Paths
+This library is hosted on github at:
+
+http://github.com/ryanscott/rcloudlib
+
+the git address is:
+
+git@github.com:ryanscott/rcloudlib.git
+
+
+--
+Setting up rcloudlib with a new iPhone project in XCode
+--
+
+There are two methods possible, copying source files from rcloudlib project into your target project (not advised), or linking against a static library, which is described below.
+
+Header Search Paths:
 ${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include
 
 source website:
@@ -33,3 +48,5 @@ ${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/incl
 5. Add -ObjC to "Other Linker Flags" in the build configurations.  thanks to the following website:
 
 http://www.codingventures.com/2009/04/xcode-templates-for-iphone-static-libraries-with-unit-testing/
+
+The new project should now dynamically build rcloudlib as needed.
