@@ -36,10 +36,10 @@ static ImagePickerController* gImagePicker = nil;
 	self.delegate = self;
 	self._rlDelegate = rlDelegate;
 	if ( [_rlDelegate respondsToSelector:@selector(allowImageEditing)] )
-		self.allowsImageEditing = [_rlDelegate allowImageEditing];
+		self.allowsEditing = [_rlDelegate allowImageEditing];
 //		self.allowsEditing = [_rlDelegate allowImageEditing];
 	else
-		self.allowsImageEditing = NO;
+		self.allowsEditing = NO;
 //		self.allowsEditing = NO;
 	[self trySetSourceType:newSourceType];
 }
