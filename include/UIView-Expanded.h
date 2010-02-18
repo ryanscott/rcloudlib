@@ -6,4 +6,7 @@
 -(void)setOrigin:(CGPoint)newOrigin;
 -(void)setSize:(CGSize)heightWidth;
 
+-(void)centerInView:(UIView*)containingView;
+-(void)centerInView:(UIView*)containingView xOffset:(CGFloat)x_offset yOffset:(CGFloat)y_offset;
+
 @end

@@ -17,6 +17,10 @@
 +(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize;
 //+(UIImage*)imageWithImage:(UIImage*)image rotate:(UIImageOrientation)orient scale:(CGSize)newSize; 
 
+// Bitmap
++(CGContextRef)CreateARGBBitmapContext:(CGImageRef)inImage size:(CGSize)inSize;
++(unsigned char*)RequestImagePixelData:(UIImage*)inImage;
+
 // File
 +(NSString *)generateFullPathFromFilename:(NSString *) filename;
 
@@ -55,5 +59,7 @@
 +(float)boundf_floor:(float)x floor_val:(float)floor_val;
 +(float)boundf_ceil:(float)x ceil_val:(float)ceil_val;
 +(float)boundf_floor_zero:(float)x;
+
+
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94018D75112C886B0011114D /* BusyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94018D73112C886B0011114D /* BusyViewController.h */; };
+		94018D78112C89AD0011114D /* BusyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94018D77112C89AD0011114D /* BusyViewController.m */; };
+		94018D8B112C9B3D0011114D /* RoundedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94018D89112C9B3D0011114D /* RoundedView.h */; };
+		94018D8E112C9B700011114D /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94018D8D112C9B700011114D /* RoundedView.m */; };
 		942C1EDD104867040076A2A0 /* RCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 942C1EDB104867040076A2A0 /* RCLabel.m */; };
 		942C1EDE104867040076A2A0 /* UITextView-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 942C1EDC104867040076A2A0 /* UITextView-Expanded.m */; };
 		942C1EE1104867170076A2A0 /* RCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 942C1EDF104867170076A2A0 /* RCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94018D73112C886B0011114D /* BusyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusyViewController.h; sourceTree = "<group>"; };
+		94018D77112C89AD0011114D /* BusyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusyViewController.m; path = Classes/BusyViewController.m; sourceTree = "<group>"; };
+		94018D89112C9B3D0011114D /* RoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedView.h; sourceTree = "<group>"; };
+		94018D8D112C9B700011114D /* RoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedView.m; path = Classes/RoundedView.m; sourceTree = "<group>"; };
 		94094276110A468500F5D00A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		942C1EDB104867040076A2A0 /* RCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCLabel.m; path = Classes/RCLabel.m; sourceTree = "<group>"; };
 		942C1EDC104867040076A2A0 /* UITextView-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView-Expanded.m"; path = "Classes/UITextView-Expanded.m"; sourceTree = "<group>"; };
@@ -204,6 +212,8 @@
 				94FA8B321024EA08009B89BB /* CustomFontBase.h */,
 				94AFCF1710263F870025821E /* ImagePickerController.h */,
 				94FA8B511024ECAE009B89BB /* ImageButton.h */,
+				94018D73112C886B0011114D /* BusyViewController.h */,
+				94018D89112C9B3D0011114D /* RoundedView.h */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -216,6 +226,8 @@
 				94FA8B301024EA00009B89BB /* CustomFontBase.m */,
 				94AFCF1910263F8F0025821E /* ImagePickerController.m */,
 				94FA8B531024ECB7009B89BB /* ImageButton.m */,
+				94018D77112C89AD0011114D /* BusyViewController.m */,
+				94018D8D112C9B700011114D /* RoundedView.m */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -254,6 +266,8 @@
 				942C1F431048686F0076A2A0 /* rcloudlibconstants.h in Headers */,
 				942C1F45104868DD0076A2A0 /* rcloud.h in Headers */,
 				946F785E1051997100F765D1 /* FieldEditController.h in Headers */,
+				94018D75112C886B0011114D /* BusyViewController.h in Headers */,
+				94018D8B112C9B3D0011114D /* RoundedView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +325,8 @@
 				942C1EDD104867040076A2A0 /* RCLabel.m in Sources */,
 				942C1EDE104867040076A2A0 /* UITextView-Expanded.m in Sources */,
 				946F785C1051996900F765D1 /* FieldEditController.m in Sources */,
+				94018D78112C89AD0011114D /* BusyViewController.m in Sources */,
+				94018D8E112C9B700011114D /* RoundedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

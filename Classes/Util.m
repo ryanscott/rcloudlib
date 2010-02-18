@@ -19,6 +19,8 @@ static NSMutableDictionary* __imageCache = nil;
 	srandom(time(NULL));
 }
 
+#pragma mark Image
+
 +(void)initImageCache
 {
 	__imageCache = [[NSMutableDictionary alloc] initWithCapacity:10];
@@ -186,6 +188,66 @@ static NSMutableDictionary* __imageCache = nil;
 //	
 //	return copy;
 //}
+
+#pragma mark Bitmap
+
++(CGContextRef)CreateARGBBitmapContext:(CGImageRef)inImage size:(CGSize)inSize
+{
+	CGContextRef    context = NULL;
+	CGColorSpaceRef colorSpace;
+	void *          bitmapData;
+	int             bitmapByteCount;
+	int             bitmapBytesPerRow;
+	
+	size_t pixelsWide = inSize.width;
+	size_t pixelsHigh = inSize.height;
+	bitmapBytesPerRow   = (pixelsWide * 4);
+	bitmapByteCount     = (bitmapBytesPerRow * pixelsHigh);
+	colorSpace = CGColorSpaceCreateDeviceRGB();
+	
+	if (colorSpace == NULL)
+	{
+		fprintf(stderr, "Error allocating color space\n");
+		return NULL;
+	}
+	
+	// allocate the bitmap & create context
+	bitmapData = malloc( bitmapByteCount );
+	if (bitmapData == NULL)
+	{
+		fprintf (stderr, "Memory not allocated!");
+		CGColorSpaceRelease( colorSpace );
+		return NULL;
+	}
+	
+	context = CGBitmapContextCreate (bitmapData, pixelsWide, pixelsHigh, 8,
+																	 bitmapBytesPerRow, colorSpace,
+																	 kCGImageAlphaPremultipliedFirst);
+	if (context == NULL)
+	{
+		free (bitmapData);
+		fprintf (stderr, "Context not created!");
+	}
+	
+	CGColorSpaceRelease( colorSpace );
+	return context;	
+}
+
++(unsigned char*)RequestImagePixelData:(UIImage*)inImage
+{
+	CGImageRef img = [inImage CGImage];
+	CGSize size = [inImage size];
+	
+	CGContextRef cgctx = [Util CreateARGBBitmapContext:img size:size];
+	if (cgctx == NULL) return NULL;
+	
+	CGRect rect = {{0,0},{size.width, size.height}};
+	CGContextDrawImage(cgctx, rect, img);
+	unsigned char *data = CGBitmapContextGetData (cgctx);
+	CGContextRelease(cgctx);
+	
+	return data;
+}
 
 #pragma mark File
 // File
