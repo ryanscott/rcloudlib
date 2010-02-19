@@ -14,19 +14,33 @@
 
 static Klassname *gInstance = NULL;
 
-+ (Klassname *)instance
++(void)initialize 
 {
-	@synchronized(self)
+	if (self == [Klassname class]) 
 	{
-    if (gInstance == NULL)
-		{
-			gInstance = [[self alloc] init];
-			[gInstance initLog];
-		}
+		gInstance = [[self alloc] init];
 	}
-	return(gInstance);
 }
 
++(Klassname*)instance
+{
+	return gInstance;
+}
+
+// old way, slower, and less correct...since @synchronized is executing on nil
+//
+//+ (Klassname *)instance
+//{
+//	@synchronized(self)
+//	{
+//    if (gInstance == NULL)
+//		{
+//			gInstance = [[self alloc] init];
+//			[gInstance initLog];
+//		}
+//	}
+//	return(gInstance);
+//}
 
 
 // ---------------
