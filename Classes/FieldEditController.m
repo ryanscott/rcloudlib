@@ -168,7 +168,8 @@ static const int kToolbarDone = 1;
 
 -(void)loadView 
 {
-	CGRect content_frame = [[UIScreen mainScreen] applicationFrame];
+//	CGRect content_frame = [[UIScreen mainScreen] applicationFrame];
+	CGRect content_frame = kApplicationFrame;
 	UIView *contentView = [[UIView alloc] initWithFrame:content_frame];
 	contentView.backgroundColor = [UIColor groupTableViewBackgroundColor];
 	self.view = contentView;

@@ -50,3 +50,9 @@ ${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/incl
 http://www.codingventures.com/2009/04/xcode-templates-for-iphone-static-libraries-with-unit-testing/
 
 The new project should now dynamically build rcloudlib as needed.
+
+Optional Instuctions:
+
+1.  Add rcloudlib.h to the new project PCH. This removes the need to manually include library headers.  
+		a mater of style and preference.  I personally really like it.
+		

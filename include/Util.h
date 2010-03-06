@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#if DEBUG
+#if (DEBUG || ADHOC)
 #define RCLog(format, ...) [Util log:[NSString stringWithFormat:@"<%@:(%d) %p::%s> %@",[[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, self, __PRETTY_FUNCTION__, [NSString stringWithFormat:format, ##__VA_ARGS__] ]]
 #else
 #define RCLog(format, ...)
