@@ -43,6 +43,11 @@ void initRCLib()
 	initRCConstants();	
 }
 
+void RCLibFreeMemory()
+{
+	[ImagePickerController freeMemory];
+}
+
 void terminateRCLib()
 {
 	releaseRCConstants();

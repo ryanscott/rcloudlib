@@ -20,6 +20,12 @@ extern CGRect kTabViewFrame;
 // this should be the first line in applicationDidFinishLaunching
 void initRCLib();
 
+// call this from applicationDidReceiveMemoryWarning and RCLib will attempt to
+// free up as much memory as it can, by dumping things like image cache, image picker,
+// and any other yet to be determined global memory allocations that can more or less
+// safely be discarded then later re-allocated on demand
+void RCLibFreeMemory();
+
 // release memory allocated in initRCLib
 // this should be in applicationWillTerminate
 void terminateRCLib();

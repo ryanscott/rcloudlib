@@ -7,6 +7,9 @@ static ImagePickerController* gImagePicker = nil;
 
 @synthesize _rlDelegate;
 @synthesize _hook;
+@synthesize _ipActionSheet;
+@synthesize _imagePicker;
+@synthesize _safeToRelease;
 
 #pragma mark Initialization
 
@@ -15,15 +18,15 @@ static ImagePickerController* gImagePicker = nil;
 	// Attempt to use the requested source type...and fall back in order of usefulness
 	if ([UIImagePickerController isSourceTypeAvailable:newSourceType])
 	{
-		self.sourceType = newSourceType;
+		self._imagePicker.sourceType = newSourceType;
 	}
 	else if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary])
 	{
-		self.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+		self._imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 	}
 	else if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum])
 	{
-		self.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+		self._imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
 	}
 	else
 	{
@@ -31,37 +34,38 @@ static ImagePickerController* gImagePicker = nil;
 	}	
 }
 
--(void)initSelf:(UIImagePickerControllerSourceType)newSourceType rlDelegate:(id<ImagePickerDelegate>)rlDelegate
-{
-	self.delegate = self;
-	self._rlDelegate = rlDelegate;
-	if ( [_rlDelegate respondsToSelector:@selector(allowImageEditing)] )
-		self.allowsEditing = [_rlDelegate allowImageEditing];
-//		self.allowsEditing = [_rlDelegate allowImageEditing];
-	else
-		self.allowsEditing = NO;
-//		self.allowsEditing = NO;
-	[self trySetSourceType:newSourceType];
-}
-
--(id)initWithSourceType:(UIImagePickerControllerSourceType)newSourceType rlDelegate:rlDelegate
+-(id)initWithDelegate:(id<ImagePickerDelegate>)rlDelegate
 {
 	if ( self = [super init] )
 	{
-		[self initSelf:newSourceType rlDelegate:rlDelegate];
+		_safeToRelease = true;
+		_ipActionSheet = nil;
+		_imagePicker = nil;
+		_rlDelegate = rlDelegate;
 	}
 
 	return self;
 }
 
-- (void)dealloc 
+-(void)initPicker
 {
-	[super dealloc];
+	if ( nil == self._imagePicker )
+	{
+		self._imagePicker = [[UIImagePickerController alloc] init];
+		self._imagePicker.delegate = self;
+	}
+
+	if ( [_rlDelegate respondsToSelector:@selector(allowImageEditing)] )
+		self._imagePicker.allowsEditing = [_rlDelegate allowImageEditing];
+	else
+		self._imagePicker.allowsEditing = NO;
 }
 
-- (void)didReceiveMemoryWarning 
+- (void)dealloc 
 {
-	[super didReceiveMemoryWarning];
+	[_ipActionSheet release];
+	[_imagePicker release];
+	[super dealloc];
 }
 
 #pragma mark UIImagePickerControllerDelegate Methods
@@ -178,7 +182,8 @@ UIImage *scaleAndRotateImage(UIImage *image)
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {	
 //	[[self parentViewController] dismissModalViewControllerAnimated:YES];
-	[gImagePicker._hook dismissModalViewControllerAnimated:YES];
+//	[gImagePicker._hook dismissModalViewControllerAnimated:YES];
+	[self._hook dismissModalViewControllerAnimated:YES];
 	
 //	NSString *const UIImagePickerControllerMediaType;
 //	NSString *const UIImagePickerControllerOriginalImage;
@@ -259,31 +264,134 @@ UIImage *scaleAndRotateImage(UIImage *image)
 	}
 	
 	[_rlDelegate userPickedImage:pickedImage];
+	_safeToRelease = true;
 //	[_rlDelegate userPickedImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
 //	[[self parentViewController] dismissModalViewControllerAnimated:YES];
-	[gImagePicker._hook dismissModalViewControllerAnimated:YES];
+//	[gImagePicker._hook dismissModalViewControllerAnimated:YES];
+	[self._hook dismissModalViewControllerAnimated:YES];
 	
 	if ( [_rlDelegate respondsToSelector:@selector(pickerCancelled)] )
 		[_rlDelegate pickerCancelled];
+	_safeToRelease = true;
+}
+
+-(void)pickImageWithSourceType:(UIImagePickerControllerSourceType)inSourceType
+{
+	[self initPicker];	
+	[self trySetSourceType:inSourceType];
+	[self._hook presentModalViewController:self._imagePicker animated:YES];				
+}
+
+-(void)initActionSheet
+{
+//	-(NSString*)actionSheetTitle;
+//	-(NSString*)actionSheetCameraButtonTitle;
+//	-(NSString*)actionSheetLibraryButtonTitle;
+//	
+//	NSString* sheet_title = @"";
+//	
+//	if ( [_rlDelegate respondsToSelector:@selector(doNotResize)] )
+//		shouldResize = ![_rlDelegate doNotResize];
+
+	NSString* sheetTitle = [_rlDelegate respondsToSelector:@selector(actionSheetTitle)] ? [_rlDelegate actionSheetTitle] : @"Choose a Photo";
+	NSString* libraryButtonTitle = [_rlDelegate respondsToSelector:@selector(actionSheetLibraryButtonTitle)] ? [_rlDelegate actionSheetLibraryButtonTitle] : @"Choose Existing Photo";
+
+	if ( [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] )
+	{
+		NSString* cameraButtonTitle = [_rlDelegate respondsToSelector:@selector(actionSheetCameraButtonTitle)] ? [_rlDelegate actionSheetCameraButtonTitle] : @"Take New Photo";
+
+		// open a dialog with two custom buttons
+//		self._ipActionSheet = [[UIActionSheet alloc] initWithTitle:@"Match Paint Color from Photo"
+//																											delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil
+//																						 otherButtonTitles:@"Take New Photo", @"Choose Existing Photo", @"Cancel", nil];
+		self._ipActionSheet = [[UIActionSheet alloc] initWithTitle:sheetTitle
+																											delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil
+																						 otherButtonTitles:cameraButtonTitle, libraryButtonTitle, @"Cancel", nil];
+		self._ipActionSheet.destructiveButtonIndex = 2;	// make the second button red (destructive)
+	}
+	else
+	{
+		self._ipActionSheet = [[UIActionSheet alloc] initWithTitle:sheetTitle
+																													delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil
+																								 otherButtonTitles:libraryButtonTitle, @"Cancel", nil];
+		self._ipActionSheet.destructiveButtonIndex = 1;	// make the second button red (destructive)
+	}
+	
+	self._ipActionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+}
+
+
+#pragma mark UIActionSheetDelegate methods
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	// buttonIndex -> actions list:
+	// 0 -> Take New Photo
+	// 1 -> Choose Existing Photo
+	// 2 -> Cancel
+	
+	if ( [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] )
+	{
+		if ( 0 == buttonIndex )
+		{
+			[self pickImageWithSourceType:UIImagePickerControllerSourceTypeCamera];
+		}
+		else if ( 1 == buttonIndex )
+		{
+			[self pickImageWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+		}
+	}
+	else if ( 0 == buttonIndex )
+	{
+		[self pickImageWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+	}
 }
 
 #pragma mark API Methods
 
-+(void)pickImageWithSourceType:(UIImagePickerControllerSourceType)sourceType rlDelegate:(id<ImagePickerDelegate>)rlDelegate hook:(UIViewController*)newHook
++(void)pickImageWithSourceType:(UIImagePickerControllerSourceType)inSourceType rlDelegate:(id<ImagePickerDelegate>)rlDelegate hook:(UIViewController*)newHook
 {
 	if ( nil == gImagePicker )
-		gImagePicker = [[ImagePickerController alloc] initWithSourceType:sourceType rlDelegate:rlDelegate];
+		gImagePicker = [[ImagePickerController alloc] initWithDelegate:rlDelegate];
 	else
 	{
-		[gImagePicker initSelf:sourceType rlDelegate:rlDelegate];
+		gImagePicker._rlDelegate = rlDelegate;
+	}
+	[gImagePicker initPicker];
+	
+	[gImagePicker trySetSourceType:inSourceType];
+	gImagePicker._hook = newHook;
+	
+	gImagePicker._safeToRelease = false;
+	[gImagePicker._hook presentModalViewController:gImagePicker._imagePicker animated:YES];				
+}
+
++(void)pickImageInView:(UIView*)inView rlDelegate:(id<ImagePickerDelegate>)rlDelegate hook:(UIViewController*)newHook
+{
+	if ( nil == gImagePicker )
+		gImagePicker = [[ImagePickerController alloc] initWithDelegate:rlDelegate];
+	else
+	{
+		gImagePicker._rlDelegate = rlDelegate;		
 	}
 	gImagePicker._hook = newHook;
 	
-	[gImagePicker._hook presentModalViewController:gImagePicker animated:YES];				
+	if ( nil == gImagePicker._ipActionSheet )
+		[gImagePicker initActionSheet];
+	
+	gImagePicker._safeToRelease = false;	
+	[gImagePicker._ipActionSheet showInView:inView];
 }
+
++(void)freeMemory
+{
+	if ( nil != gImagePicker && gImagePicker._safeToRelease )
+		[gImagePicker release];
+}
+
 
 @end
