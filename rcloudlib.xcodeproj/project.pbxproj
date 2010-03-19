@@ -27,6 +27,8 @@
 		94AFCF35102642D40025821E /* UIImage-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF34102642D40025821E /* UIImage-Expanded.m */; };
 		94AFCF37102642DB0025821E /* UIImage-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF36102642DB0025821E /* UIImage-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94AFCF3D102643710025821E /* rcloudlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF3C102643710025821E /* rcloudlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E657AF1152DECF00404952 /* UIControl-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E657AD1152DECF00404952 /* UIControl-Expanded.h */; };
+		94E657B21152DEEA00404952 /* UIControl-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E657B11152DEEA00404952 /* UIControl-Expanded.m */; };
 		94FA8A1B1024DECA009B89BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FA8A1A1024DECA009B89BB /* UIKit.framework */; };
 		94FA8AA41024E28C009B89BB /* UIView-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8AA31024E28C009B89BB /* UIView-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94FA8AA71024E2A6009B89BB /* UIColor-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +70,8 @@
 		94AFCF34102642D40025821E /* UIImage-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Expanded.m"; path = "Classes/UIImage-Expanded.m"; sourceTree = "<group>"; };
 		94AFCF36102642DB0025821E /* UIImage-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Expanded.h"; sourceTree = "<group>"; };
 		94AFCF3C102643710025821E /* rcloudlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlib.h; sourceTree = "<group>"; };
+		94E657AD1152DECF00404952 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl-Expanded.h"; sourceTree = "<group>"; };
+		94E657B11152DEEA00404952 /* UIControl-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl-Expanded.m"; path = "Classes/UIControl-Expanded.m"; sourceTree = "<group>"; };
 		94FA8A1A1024DECA009B89BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94FA8AA31024E28C009B89BB /* UIView-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView-Expanded.h"; sourceTree = "<group>"; };
 		94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 				94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */,
 				94FA8AA31024E28C009B89BB /* UIView-Expanded.h */,
 				94AFCF36102642DB0025821E /* UIImage-Expanded.h */,
+				94E657AD1152DECF00404952 /* UIControl-Expanded.h */,
 			);
 			name = "Class Extensions";
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 		948209CE10460FB30090483A /* Class Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94E657B11152DEEA00404952 /* UIControl-Expanded.m */,
 				942C1EDC104867040076A2A0 /* UITextView-Expanded.m */,
 				948209D110460FD70090483A /* UIViewController-Expanded.m */,
 				94FA8B2A1024E999009B89BB /* UIColor-Expanded.m */,
@@ -263,6 +269,7 @@
 				946F785E1051997100F765D1 /* FieldEditController.h in Headers */,
 				94018D75112C886B0011114D /* BusyViewController.h in Headers */,
 				94018D8B112C9B3D0011114D /* RoundedView.h in Headers */,
+				94E657AF1152DECF00404952 /* UIControl-Expanded.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +330,7 @@
 				94018D78112C89AD0011114D /* BusyViewController.m in Sources */,
 				94018D8E112C9B700011114D /* RoundedView.m in Sources */,
 				945AF21B113F904F00F58A60 /* rcloudlibconstants.m in Sources */,
+				94E657B21152DEEA00404952 /* UIControl-Expanded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

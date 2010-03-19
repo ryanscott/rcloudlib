@@ -10,7 +10,10 @@
 	
 	i_center.x += newOrigin.x - ( i_center.x - (i_size.width / 2 ) );
 	i_center.y += newOrigin.y - ( i_center.y - (i_size.height / 2 ) );
-
+	
+//	i_center.x = newOrigin.x + (i_size.width / 2 );
+//	i_center.y = newOrigin.y + (i_size.height / 2 );
+	
 	[self setCenter:i_center];
 }
 
