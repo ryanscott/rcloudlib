@@ -56,9 +56,9 @@ static ImagePickerController* gImagePicker = nil;
 	}
 
 	if ( [_rlDelegate respondsToSelector:@selector(allowImageEditing)] )
-		self._imagePicker.allowsEditing = [_rlDelegate allowImageEditing];
+		self._imagePicker.allowsImageEditing = [_rlDelegate allowImageEditing];
 	else
-		self._imagePicker.allowsEditing = NO;
+		self._imagePicker.allowsImageEditing = NO;
 }
 
 - (void)dealloc 
