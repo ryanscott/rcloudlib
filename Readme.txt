@@ -11,7 +11,17 @@ git@github.com:ryanscott/rcloudlib.git
 Setting up rcloudlib with a new iPhone project in XCode
 --
 
-There are two methods possible, copying source files from rcloudlib project into your target project (not advised), or linking against a static library, which is described below.
+There are three methods possible:
+
+1. add files from rcloudlib to your project as links, not copies (strongly advised)
+2. copy source files from rcloudlib project into your target project (only advised to protect against library changes)
+3. linking against a static library, which is described below (really not advised)
+
+** previously, this used to work.  seems to not work anymore, now that I'm using and referencing constants in the library
+   I'm seeing linking errors.  not sure how it ever worked, maybe I have my setup wrong.  
+	 
+	 regardless, the soft-link method is now my standard setup.  have to manually add new files, but not a big problem.
+**	 
 
 Header Search Paths:
 ${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include

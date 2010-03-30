@@ -72,6 +72,8 @@
 		94AFCF3C102643710025821E /* rcloudlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlib.h; sourceTree = "<group>"; };
 		94E657AD1152DECF00404952 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl-Expanded.h"; sourceTree = "<group>"; };
 		94E657B11152DEEA00404952 /* UIControl-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl-Expanded.m"; path = "Classes/UIControl-Expanded.m"; sourceTree = "<group>"; };
+		94C537341161949D00DAA07C /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
+		94C53737116194B100DAA07C /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBAccess.m; path = Classes/DBAccess.m; sourceTree = SOURCE_ROOT; };
 		94FA8A1A1024DECA009B89BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94FA8AA31024E28C009B89BB /* UIView-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView-Expanded.h"; sourceTree = "<group>"; };
 		94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				946F7865105199B600F765D1 /* Resources */,
 				94094274110A464200F5D00A /* Other Files */,
+				940D585C116194090007EBD2 /* Optional Components */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -162,6 +165,16 @@
 				94854583111A4A6900B8901F /* UIControlTemplates.txt */,
 			);
 			name = "Other Files";
+			sourceTree = "<group>";
+		};
+		940D585C116194090007EBD2 /* Optional Components */ = {
+			isa = PBXGroup;
+			children = (
+				94C537341161949D00DAA07C /* DBAccess.h */,
+				94C53737116194B100DAA07C /* DBAccess.m */,
+			);
+			name = "Optional Components";
+			path = include;
 			sourceTree = "<group>";
 		};
 		946F7865105199B600F765D1 /* Resources */ = {
