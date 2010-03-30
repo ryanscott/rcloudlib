@@ -9,6 +9,10 @@ const CGFloat kDefaultTransitionDuration = 0.3f;
 const CGFloat kDefaultFastTransitionDuration = 0.2f;
 const CGFloat kDefaultFlipTransitionDuration = 0.7f;
 
+const CGFloat kSoftCornerRadius = 5.0f;
+const CGFloat kDefaultCornerRadius = 8.0f;
+const CGFloat kHardCornerRadius = 15.0f;
+
 CGRect kApplicationFrame;
 CGRect kTabViewFrame;
 

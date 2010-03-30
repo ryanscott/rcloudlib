@@ -57,7 +57,7 @@
 	if (self = [super initWithFrame:frame])
 	{
 		// default corner to 8.0, a reasonable number
-		self._cornerRadius = 8.0f;
+		self._cornerRadius = kDefaultCornerRadius;
 		self._viewColor = [UIColor darkGrayColor];
 		super.opaque = NO;
 	}

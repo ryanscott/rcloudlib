@@ -331,8 +331,8 @@ static NSMutableDictionary* __imageCache = nil;
 +(void)log:(NSString*)nsLogString
 {
 #ifdef DEBUG
-	//NSLog(nsLogString);
-	NSLog( @"<%@:(%d) %p::%s> %@",  [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, self, __PRETTY_FUNCTION__, nsLogString );
+	NSLog(@"%@",nsLogString);
+	//NSLog( @"<%@:(%d) %p::%s> %@",  [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, self, __PRETTY_FUNCTION__, nsLogString );
 #endif	
 }
 

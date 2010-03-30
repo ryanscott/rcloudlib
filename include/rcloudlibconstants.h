@@ -13,6 +13,10 @@ extern const CGFloat kDefaultTransitionDuration;
 extern const CGFloat kDefaultFastTransitionDuration;
 extern const CGFloat kDefaultFlipTransitionDuration;
 
+extern const CGFloat kSoftCornerRadius;
+extern const CGFloat kDefaultCornerRadius;
+extern const CGFloat kHardCornerRadius;
+
 extern CGRect kApplicationFrame;
 extern CGRect kTabViewFrame;
 
