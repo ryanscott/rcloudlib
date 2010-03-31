@@ -1,3 +1,28 @@
+
+// ---------------
+// Custom Object .m
+// ---------------
+
+#pragma mark Custom Accessors
+
+-(void)set_states:(NSArray*)new_states
+{
+	if ( _states != new_states )
+	{
+		[new_states retain];
+		[_states release];
+		
+		_states = new_states;
+		
+		//[self.tableView reloadData];
+	}
+}
+
+-(NSArray*)_states
+{
+	return _states;
+}
+
 // ---------------
 // Singleton .h
 // ---------------
@@ -28,6 +53,10 @@ static Klassname *gInstance = NULL;
 }
 
 // old way, slower, and less correct...since @synchronized is executing on nil
+//
+// but, if the singleton class has the potential to be deallocated due to memory issues,
+// this is what you have to use.
+// I prefer to keep the singleton objects, and clear the member values instead, if that makes sense for the class
 //
 //+ (Klassname *)instance
 //{

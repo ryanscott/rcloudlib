@@ -187,7 +187,7 @@
 -(UIImage*)roundCorners:(CGFloat)radius
 {
 	CGRect             bnds = CGRectMake(0.0f, 0.0f, self.size.width, self.size.height);
-	CGImageRef         imag = self.CGImage;
+//	CGImageRef         imag = self.CGImage;
 	CGContextRef       ctxt = nil;
 	UIImage*           copy = nil;
 
