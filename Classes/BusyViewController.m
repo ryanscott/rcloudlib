@@ -7,6 +7,7 @@
 @synthesize _rectView;
 @synthesize _busyMessage;
 @synthesize _isVisible;
+@synthesize _safeToRelease;
 
 #pragma mark Singleton
 
@@ -22,6 +23,17 @@ static BusyViewController *gBusyViewControllerInstance = NULL;
 		}
 	}
 	return(gBusyViewControllerInstance);
+}
+
+#pragma mark Memory Management
+
++(void)freeMemory
+{
+	if ( nil != gBusyViewControllerInstance && gBusyViewControllerInstance._safeToRelease )
+	{
+		[gBusyViewControllerInstance release];
+		gBusyViewControllerInstance = nil;
+	}
 }
 
 #pragma mark Initialization Methods
@@ -87,15 +99,29 @@ static BusyViewController *gBusyViewControllerInstance = NULL;
 	CGFloat height = 160.0f;
 	
 	CGRect l_frame = CGRectMake(x, y, width, height);
-	
-	self._rectView = [RoundedView viewWithFrame:l_frame color:[UIColor colorWithWhite: 0.2f alpha: 0.9f]];
 
-	self._activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	RoundedView* rv = [RoundedView viewWithFrame:l_frame color:[UIColor colorWithWhite: 0.2f alpha: 0.9f]];
+	self._rectView = rv;
+	[rv release];
+	
+//	self._rectView = [RoundedView viewWithFrame:l_frame color:[UIColor colorWithWhite: 0.2f alpha: 0.9f]];
+
+	UIActivityIndicatorView* av = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];	
+	self._activityView = av;
+	[av release];
+	
+//	self._activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	
 	[self._activityView centerInView:self._rectView];
 
 	//	self._activityView.center = CGPointMake(view_center_x, view_center_y);
 
-	self._busyMessage = [[UILabel alloc] initWithFrame: CGRectZero];
+	UILabel* bm = [[UILabel alloc] initWithFrame: CGRectZero];	
+	self._busyMessage = bm;
+	[bm release];
+	
+//	self._busyMessage = [[UILabel alloc] initWithFrame: CGRectZero];
+
 	self._busyMessage.font = [UIFont systemFontOfSize: [UIFont labelFontSize]];
 	self._busyMessage.text = @"Loading...";
 	[self._busyMessage sizeToFit];
@@ -119,9 +145,11 @@ static BusyViewController *gBusyViewControllerInstance = NULL;
 	{
 		self._activityView = nil;
 		self._isVisible = false;
+		self._safeToRelease = true;
 		[self initControls];
 	}
 	return self;
+
 }
 
 - (void)loadView 
@@ -162,6 +190,7 @@ static BusyViewController *gBusyViewControllerInstance = NULL;
 	//	[self initEvents];
 	
 	[self addSubviews];
+	
 	[super viewDidLoad];
 }
 
@@ -173,7 +202,6 @@ static BusyViewController *gBusyViewControllerInstance = NULL;
 - (void)dealloc 
 {
 	//	[self stopEvents];
-	
 	[_activityView release];
 	[_rectView release];
 	[_busyMessage release];
@@ -186,6 +214,8 @@ const static CGFloat kTransitionScale = 1.2f;
 
 - (void)show
 {
+	self._safeToRelease = false;
+	
 	BOOL bPrevAnimationEnabled;
 	
 	if (NO == self._isVisible)
@@ -234,6 +264,7 @@ const static CGFloat kTransitionScale = 1.2f;
 	if (NO == self._isVisible)
 	{
 		self.view.hidden = YES;
+		self._safeToRelease = true;
 	}
 }
 

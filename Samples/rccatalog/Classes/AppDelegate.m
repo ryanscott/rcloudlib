@@ -10,12 +10,16 @@
 { 
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 	
-	RCLog(@"intmax = %d", INT_MAX);
-
 	self._mainView = [[MainView alloc] init];
 	
 	[window addSubview:self._mainView.view];
 	[window makeKeyAndVisible];
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+	RCLog( @"Application did receive Memory Warning!!!" );
+	RCLibFreeMemory();
 }
 
 - (void)dealloc 
