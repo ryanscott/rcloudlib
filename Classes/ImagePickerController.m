@@ -51,7 +51,10 @@ static ImagePickerController* gImagePicker = nil;
 {
 	if ( nil == self._imagePicker )
 	{
-		self._imagePicker = [[UIImagePickerController alloc] init];
+		UIImagePickerController* uipc = [[UIImagePickerController alloc] init];
+		self._imagePicker = uipc;
+		[uipc release];
+
 		self._imagePicker.delegate = self;
 	}
 
@@ -390,7 +393,10 @@ UIImage *scaleAndRotateImage(UIImage *image)
 +(void)freeMemory
 {
 	if ( nil != gImagePicker && gImagePicker._safeToRelease )
+	{
 		[gImagePicker release];
+		gImagePicker = nil;
+	}
 }
 
 

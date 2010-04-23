@@ -1,6 +1,5 @@
 #import <UIKit/UIKit.h>
 
-
 @interface MainView : UIViewController <ImagePickerDelegate>
 {
 	UIButton* _drawButton;

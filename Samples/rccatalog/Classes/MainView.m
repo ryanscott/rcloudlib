@@ -128,9 +128,9 @@
 	
 	[self.view addSubview:smallerImageView];	
 	
-	[BusyViewController performSelector:@selector(show) withObject:nil afterDelay:5.0];
+	[BusyViewController performSelector:@selector(show) withObject:nil afterDelay:1.0];
+
+	[BusyViewController performSelector:@selector(hide) withObject:nil afterDelay:5.0];
 }
-
-
 
 @end
