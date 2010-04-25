@@ -22,6 +22,8 @@
 		946F789A1051A0A300F765D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F78991051A0A300F765D1 /* QuartzCore.framework */; };
 		948209D010460FCB0090483A /* UIViewController-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 948209CF10460FCB0090483A /* UIViewController-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948209D210460FD70090483A /* UIViewController-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 948209D110460FD70090483A /* UIViewController-Expanded.m */; };
+		94A007421181213800B43B73 /* BitmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A007411181213800B43B73 /* BitmapView.m */; };
+		94A007441181215100B43B73 /* BitmapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A007431181215100B43B73 /* BitmapView.h */; };
 		94AFCF1810263F870025821E /* ImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF1710263F870025821E /* ImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94AFCF1A10263F8F0025821E /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */; };
 		94AFCF35102642D40025821E /* UIImage-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF34102642D40025821E /* UIImage-Expanded.m */; };
@@ -65,6 +67,8 @@
 		94854581111A4A6900B8901F /* ControllerTemplates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ControllerTemplates.txt; sourceTree = "<group>"; };
 		94854582111A4A6900B8901F /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		94854583111A4A6900B8901F /* UIControlTemplates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIControlTemplates.txt; sourceTree = "<group>"; };
+		94A007411181213800B43B73 /* BitmapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapView.m; path = Classes/BitmapView.m; sourceTree = "<group>"; };
+		94A007431181215100B43B73 /* BitmapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapView.h; sourceTree = "<group>"; };
 		94AFCF1710263F870025821E /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
 		94AFCF1910263F8F0025821E /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePickerController.m; path = Classes/ImagePickerController.m; sourceTree = "<group>"; };
 		94AFCF34102642D40025821E /* UIImage-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Expanded.m"; path = "Classes/UIImage-Expanded.m"; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 		94AFCF38102642E70025821E /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				94A007431181215100B43B73 /* BitmapView.h */,
 				946F785D1051997100F765D1 /* FieldEditController.h */,
 				942C1EDF104867170076A2A0 /* RCLabel.h */,
 				94FA8B321024EA08009B89BB /* CustomFontBase.h */,
@@ -236,6 +241,7 @@
 		94AFCF39102642F50025821E /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				94A007411181213800B43B73 /* BitmapView.m */,
 				946F785B1051996900F765D1 /* FieldEditController.m */,
 				942C1EDB104867040076A2A0 /* RCLabel.m */,
 				94FA8B301024EA00009B89BB /* CustomFontBase.m */,
@@ -283,6 +289,7 @@
 				94018D75112C886B0011114D /* BusyViewController.h in Headers */,
 				94018D8B112C9B3D0011114D /* RoundedView.h in Headers */,
 				94E657AF1152DECF00404952 /* UIControl-Expanded.h in Headers */,
+				94A007441181215100B43B73 /* BitmapView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +351,7 @@
 				94018D8E112C9B700011114D /* RoundedView.m in Sources */,
 				945AF21B113F904F00F58A60 /* rcloudlibconstants.m in Sources */,
 				94E657B21152DEEA00404952 /* UIControl-Expanded.m in Sources */,
+				94A007421181213800B43B73 /* BitmapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
