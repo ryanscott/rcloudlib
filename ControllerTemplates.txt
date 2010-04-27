@@ -141,6 +141,8 @@ static Klassname *gInstance = NULL;
 	[super viewDidLoad];
 }
 
+#pragma mark Memory Management
+
 - (void)didReceiveMemoryWarning 
 {
 	[super didReceiveMemoryWarning];
