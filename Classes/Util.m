@@ -26,6 +26,17 @@ static NSMutableDictionary* __imageCache = nil;
 	__imageCache = [[NSMutableDictionary alloc] initWithCapacity:10];
 }
 
++(void)clearImageCache
+{
+	[__imageCache release];
+	[Util initImageCache];
+}
+
++(void)freeMemory
+{
+	[Util clearImageCache];
+}
+
 + (UIImage*)loadImage:(NSString*)imageName
 {
 	NSString *fileLocation = [[NSBundle mainBundle] pathForResource:imageName ofType:@"png"];

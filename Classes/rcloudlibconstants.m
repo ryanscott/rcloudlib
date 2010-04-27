@@ -49,6 +49,7 @@ void initRCLib()
 
 void RCLibFreeMemory()
 {
+	[Util freeMemory];
 	[ImagePickerController freeMemory];
 	[BusyViewController freeMemory];
 }

@@ -12,6 +12,8 @@
 
 }
 
++(void)freeMemory;
+
 +(void)randomize;
 
 // Image
