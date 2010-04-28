@@ -29,7 +29,7 @@ static NSMutableDictionary* __imageCache = nil;
 +(void)clearImageCache
 {
 	[__imageCache release];
-	[Util initImageCache];
+	__imageCache = nil;
 }
 
 +(void)freeMemory
