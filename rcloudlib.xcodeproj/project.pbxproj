@@ -29,6 +29,8 @@
 		94AFCF35102642D40025821E /* UIImage-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF34102642D40025821E /* UIImage-Expanded.m */; };
 		94AFCF37102642DB0025821E /* UIImage-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF36102642DB0025821E /* UIImage-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94AFCF3D102643710025821E /* rcloudlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF3C102643710025821E /* rcloudlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94BC81F21188F6FF00799505 /* UISwitch-Extended.h in Headers */ = {isa = PBXBuildFile; fileRef = 94BC81F11188F6FF00799505 /* UISwitch-Extended.h */; };
+		94BC81F41188F70A00799505 /* UISwitch-Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC81F31188F70A00799505 /* UISwitch-Extended.m */; };
 		94E657AF1152DECF00404952 /* UIControl-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E657AD1152DECF00404952 /* UIControl-Expanded.h */; };
 		94E657B21152DEEA00404952 /* UIControl-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E657B11152DEEA00404952 /* UIControl-Expanded.m */; };
 		94FA8A1B1024DECA009B89BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FA8A1A1024DECA009B89BB /* UIKit.framework */; };
@@ -74,6 +76,8 @@
 		94AFCF34102642D40025821E /* UIImage-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Expanded.m"; path = "Classes/UIImage-Expanded.m"; sourceTree = "<group>"; };
 		94AFCF36102642DB0025821E /* UIImage-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Expanded.h"; sourceTree = "<group>"; };
 		94AFCF3C102643710025821E /* rcloudlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlib.h; sourceTree = "<group>"; };
+		94BC81F11188F6FF00799505 /* UISwitch-Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch-Extended.h"; sourceTree = "<group>"; };
+		94BC81F31188F70A00799505 /* UISwitch-Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISwitch-Extended.m"; path = "Classes/UISwitch-Extended.m"; sourceTree = "<group>"; };
 		94C537341161949D00DAA07C /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
 		94C53737116194B100DAA07C /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBAccess.m; path = Classes/DBAccess.m; sourceTree = SOURCE_ROOT; };
 		94E657AD1152DECF00404952 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl-Expanded.h"; sourceTree = "<group>"; };
@@ -200,12 +204,13 @@
 		948209CD10460F950090483A /* Class Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94E657AD1152DECF00404952 /* UIControl-Expanded.h */,
 				942C1EE0104867170076A2A0 /* UITextView-Expanded.h */,
 				948209CF10460FCB0090483A /* UIViewController-Expanded.h */,
 				94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */,
 				94FA8AA31024E28C009B89BB /* UIView-Expanded.h */,
 				94AFCF36102642DB0025821E /* UIImage-Expanded.h */,
-				94E657AD1152DECF00404952 /* UIControl-Expanded.h */,
+				94BC81F11188F6FF00799505 /* UISwitch-Extended.h */,
 			);
 			name = "Class Extensions";
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				94FA8B2A1024E999009B89BB /* UIColor-Expanded.m */,
 				94FA8B2B1024E999009B89BB /* UIView-Expanded.m */,
 				94AFCF34102642D40025821E /* UIImage-Expanded.m */,
+				94BC81F31188F70A00799505 /* UISwitch-Extended.m */,
 			);
 			name = "Class Extensions";
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				94018D8B112C9B3D0011114D /* RoundedView.h in Headers */,
 				94E657AF1152DECF00404952 /* UIControl-Expanded.h in Headers */,
 				94A007441181215100B43B73 /* BitmapView.h in Headers */,
+				94BC81F21188F6FF00799505 /* UISwitch-Extended.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +359,7 @@
 				945AF21B113F904F00F58A60 /* rcloudlibconstants.m in Sources */,
 				94E657B21152DEEA00404952 /* UIControl-Expanded.m in Sources */,
 				94A007421181213800B43B73 /* BitmapView.m in Sources */,
+				94BC81F41188F70A00799505 /* UISwitch-Extended.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

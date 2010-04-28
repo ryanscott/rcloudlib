@@ -4,6 +4,7 @@
 #import "UIControl-Expanded.h"
 #import "UIView-Expanded.h"
 #import "UIImage-Expanded.h"
+#import "UISwitch-Extended.h"
 #import "UITextView-Expanded.h"
 #import "ImageButton.h"
 #import "ImagePickerController.h"
