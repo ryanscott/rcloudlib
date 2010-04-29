@@ -1,11 +1,3 @@
-//
-//  rciphonetemplateAppDelegate.m
-//  rciphonetemplate
-//
-//  Created by Ryan Stubblefield on 4/29/10.
-//  Copyright Context Optional Inc. 2010. All rights reserved.
-//
-
 #import "rciphonetemplateAppDelegate.h"
 
 @implementation rciphonetemplateAppDelegate
