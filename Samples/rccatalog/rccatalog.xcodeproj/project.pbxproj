@@ -15,7 +15,11 @@
 		945AF198113F88C900F58A60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945AF197113F88C900F58A60 /* QuartzCore.framework */; };
 		945AF26E113F924900F58A60 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 945AF26D113F924900F58A60 /* MainView.m */; };
 		945AF369113F9B3500F58A60 /* UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 945AF368113F9B3500F58A60 /* UIImageAdditions.m */; };
-		945AF372113F9BF700F58A60 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 945AF371113F9BF700F58A60 /* Icon.png */; };
+		94BC82731189F13F00799505 /* BitmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC826F1189F13F00799505 /* BitmapView.m */; };
+		94BC82741189F13F00799505 /* DBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC82701189F13F00799505 /* DBAccess.m */; };
+		94BC82751189F13F00799505 /* UIControl-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC82711189F13F00799505 /* UIControl-Expanded.m */; };
+		94BC82761189F13F00799505 /* UISwitch-Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC82721189F13F00799505 /* UISwitch-Extended.m */; };
+		94BC828A1189F4CD00799505 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94BC82891189F4CD00799505 /* Icon.png */; };
 		94D1CE77115964A30084B56B /* BusyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1CE59115964A30084B56B /* BusyViewController.m */; };
 		94D1CE78115964A30084B56B /* CustomFontBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1CE5A115964A30084B56B /* CustomFontBase.m */; };
 		94D1CE79115964A30084B56B /* FieldEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D1CE5B115964A30084B56B /* FieldEditController.m */; };
@@ -57,7 +61,15 @@
 		945AF26D113F924900F58A60 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		945AF367113F9B3500F58A60 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAdditions.h; sourceTree = "<group>"; };
 		945AF368113F9B3500F58A60 /* UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageAdditions.m; sourceTree = "<group>"; };
-		945AF371113F9BF700F58A60 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		94BC826F1189F13F00799505 /* BitmapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapView.m; sourceTree = "<group>"; };
+		94BC82701189F13F00799505 /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccess.m; sourceTree = "<group>"; };
+		94BC82711189F13F00799505 /* UIControl-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl-Expanded.m"; sourceTree = "<group>"; };
+		94BC82721189F13F00799505 /* UISwitch-Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch-Extended.m"; sourceTree = "<group>"; };
+		94BC82781189F14A00799505 /* BitmapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapView.h; sourceTree = "<group>"; };
+		94BC82791189F14A00799505 /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
+		94BC827A1189F14A00799505 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl-Expanded.h"; sourceTree = "<group>"; };
+		94BC827B1189F14A00799505 /* UISwitch-Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch-Extended.h"; sourceTree = "<group>"; };
+		94BC82891189F4CD00799505 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		94D1CE59115964A30084B56B /* BusyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusyViewController.m; sourceTree = "<group>"; };
 		94D1CE5A115964A30084B56B /* CustomFontBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontBase.m; sourceTree = "<group>"; };
 		94D1CE5B115964A30084B56B /* FieldEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldEditController.m; sourceTree = "<group>"; };
@@ -159,7 +171,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				945AF371113F9BF700F58A60 /* Icon.png */,
+				94BC82891189F4CD00799505 /* Icon.png */,
 				8D1107310486CEB800E47090 /* rccatalog-Info.plist */,
 			);
 			name = Resources;
@@ -190,6 +202,10 @@
 		94D1CE58115964A30084B56B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				94BC826F1189F13F00799505 /* BitmapView.m */,
+				94BC82701189F13F00799505 /* DBAccess.m */,
+				94BC82711189F13F00799505 /* UIControl-Expanded.m */,
+				94BC82721189F13F00799505 /* UISwitch-Extended.m */,
 				94D1CE59115964A30084B56B /* BusyViewController.m */,
 				94D1CE5A115964A30084B56B /* CustomFontBase.m */,
 				94D1CE5B115964A30084B56B /* FieldEditController.m */,
@@ -212,6 +228,10 @@
 		94D1CE67115964A30084B56B /* include */ = {
 			isa = PBXGroup;
 			children = (
+				94BC82781189F14A00799505 /* BitmapView.h */,
+				94BC82791189F14A00799505 /* DBAccess.h */,
+				94BC827A1189F14A00799505 /* UIControl-Expanded.h */,
+				94BC827B1189F14A00799505 /* UISwitch-Extended.h */,
 				94D1CE68115964A30084B56B /* BusyViewController.h */,
 				94D1CE69115964A30084B56B /* CustomFontBase.h */,
 				94D1CE6A115964A30084B56B /* FieldEditController.h */,
@@ -322,7 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945AF372113F9BF700F58A60 /* Icon.png in Resources */,
+				94BC828A1189F4CD00799505 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +371,10 @@
 				94D1CE82115964A30084B56B /* UIView-Expanded.m in Sources */,
 				94D1CE83115964A30084B56B /* UIViewController-Expanded.m in Sources */,
 				94D1CE84115964A30084B56B /* Util.m in Sources */,
+				94BC82731189F13F00799505 /* BitmapView.m in Sources */,
+				94BC82741189F13F00799505 /* DBAccess.m in Sources */,
+				94BC82751189F13F00799505 /* UIControl-Expanded.m in Sources */,
+				94BC82761189F13F00799505 /* UISwitch-Extended.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

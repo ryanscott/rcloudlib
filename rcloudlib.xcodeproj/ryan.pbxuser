@@ -37,35 +37,30 @@
 			PBXWorkspaceStateSaveDate = 294188744;
 		};
 		perUserProjectItems = {
-			94A00DEE11876F8900B43B73 = 94A00DEE11876F8900B43B73 /* PBXTextBookmark */;
-			94A00DEF11876F8900B43B73 = 94A00DEF11876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF011876F8900B43B73 = 94A00DF011876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF111876F8900B43B73 = 94A00DF111876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF211876F8900B43B73 = 94A00DF211876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF511876F8900B43B73 = 94A00DF511876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF611876F8900B43B73 = 94A00DF611876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF711876F8900B43B73 = 94A00DF711876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF811876F8900B43B73 = 94A00DF811876F8900B43B73 /* PBXTextBookmark */;
-			94A00DF911876F8900B43B73 = 94A00DF911876F8900B43B73 /* PBXTextBookmark */;
-			94A00DFA11876F8900B43B73 = 94A00DFA11876F8900B43B73 /* PBXTextBookmark */;
-			94A00DFB11876F8900B43B73 = 94A00DFB11876F8900B43B73 /* PBXTextBookmark */;
-			94BC813A1188E8EB00799505 = 94BC813A1188E8EB00799505 /* PBXTextBookmark */;
-			94BC813B1188E8EB00799505 = 94BC813B1188E8EB00799505 /* PBXTextBookmark */;
-			94BC813C1188E8EB00799505 = 94BC813C1188E8EB00799505 /* PBXTextBookmark */;
-			94BC813D1188E8EB00799505 = 94BC813D1188E8EB00799505 /* PBXTextBookmark */;
-			94BC813E1188E8EB00799505 = 94BC813E1188E8EB00799505 /* PBXTextBookmark */;
-			94BC813F1188E8EB00799505 = 94BC813F1188E8EB00799505 /* PBXTextBookmark */;
-			94BC81401188E8EB00799505 = 94BC81401188E8EB00799505 /* PBXTextBookmark */;
-			94BC81EC1188F6CF00799505 /* PBXTextBookmark */ = 94BC81EC1188F6CF00799505 /* PBXTextBookmark */;
-			94BC81F81188F80600799505 /* XCBuildMessageTextBookmark */ = 94BC81F81188F80600799505 /* XCBuildMessageTextBookmark */;
-			94BC81F91188F80600799505 /* PBXTextBookmark */ = 94BC81F91188F80600799505 /* PBXTextBookmark */;
+			94A00DEE11876F8900B43B73 /* PBXTextBookmark */ = 94A00DEE11876F8900B43B73 /* PBXTextBookmark */;
+			94A00DEF11876F8900B43B73 /* PBXTextBookmark */ = 94A00DEF11876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF011876F8900B43B73 /* PBXTextBookmark */ = 94A00DF011876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF111876F8900B43B73 /* PBXTextBookmark */ = 94A00DF111876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF211876F8900B43B73 /* PBXTextBookmark */ = 94A00DF211876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF511876F8900B43B73 /* PBXTextBookmark */ = 94A00DF511876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF611876F8900B43B73 /* PBXTextBookmark */ = 94A00DF611876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF711876F8900B43B73 /* PBXTextBookmark */ = 94A00DF711876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF811876F8900B43B73 /* PBXTextBookmark */ = 94A00DF811876F8900B43B73 /* PBXTextBookmark */;
+			94A00DF911876F8900B43B73 /* PBXTextBookmark */ = 94A00DF911876F8900B43B73 /* PBXTextBookmark */;
+			94A00DFA11876F8900B43B73 /* PBXTextBookmark */ = 94A00DFA11876F8900B43B73 /* PBXTextBookmark */;
+			94A00DFB11876F8900B43B73 /* PBXTextBookmark */ = 94A00DFB11876F8900B43B73 /* PBXTextBookmark */;
+			94BC813A1188E8EB00799505 /* PBXTextBookmark */ = 94BC813A1188E8EB00799505 /* PBXTextBookmark */;
+			94BC813B1188E8EB00799505 /* PBXTextBookmark */ = 94BC813B1188E8EB00799505 /* PBXTextBookmark */;
+			94BC813C1188E8EB00799505 /* PBXTextBookmark */ = 94BC813C1188E8EB00799505 /* PBXTextBookmark */;
+			94BC813D1188E8EB00799505 /* PBXTextBookmark */ = 94BC813D1188E8EB00799505 /* PBXTextBookmark */;
+			94BC813E1188E8EB00799505 /* PBXTextBookmark */ = 94BC813E1188E8EB00799505 /* PBXTextBookmark */;
 			94BC81FC1188F81800799505 /* PBXTextBookmark */ = 94BC81FC1188F81800799505 /* PBXTextBookmark */;
 			94BC81FD1188F81800799505 /* PBXTextBookmark */ = 94BC81FD1188F81800799505 /* PBXTextBookmark */;
 			94BC81FE1188F81800799505 /* PBXTextBookmark */ = 94BC81FE1188F81800799505 /* PBXTextBookmark */;
 			94BC81FF1188F81800799505 /* PBXTextBookmark */ = 94BC81FF1188F81800799505 /* PBXTextBookmark */;
 			94BC82001188F81800799505 /* PBXTextBookmark */ = 94BC82001188F81800799505 /* PBXTextBookmark */;
 			94BC82011188F81800799505 /* XCBuildMessageTextBookmark */ = 94BC82011188F81800799505 /* XCBuildMessageTextBookmark */;
-			94BC82021188F81800799505 /* PBXTextBookmark */ = 94BC82021188F81800799505 /* PBXTextBookmark */;
+			94BC821A1188FF6200799505 /* PBXTextBookmark */ = 94BC821A1188FF6200799505 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 94A1DEE41162CFCA007EEE75 /* Source Control */;
 		userBuildSettings = {
@@ -292,9 +287,9 @@
 	};
 	94AFCF1910263F8F0025821E /* ImagePickerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {775, 5512}}";
+			sepNavIntBoundsRect = "{{0, 0}, {804, 5486}}";
 			sepNavSelRange = "{1562, 0}";
-			sepNavVisRange = "{1257, 616}";
+			sepNavVisRange = "{1404, 347}";
 		};
 	};
 	94AFCF36102642DB0025821E /* UIImage-Expanded.h */ = {
@@ -361,36 +356,6 @@
 		vrLen = 993;
 		vrLoc = 2748;
 	};
-	94BC813F1188E8EB00799505 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
-		name = "ImagePickerController.m: 54";
-		rLen = 23;
-		rLoc = 1354;
-		rType = 0;
-		vrLen = 641;
-		vrLoc = 1274;
-	};
-	94BC81401188E8EB00799505 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
-		name = "ImagePickerController.m: 56";
-		rLen = 7;
-		rLoc = 1440;
-		rType = 0;
-		vrLen = 638;
-		vrLoc = 689;
-	};
-	94BC81EC1188F6CF00799505 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
-		name = "ImagePickerController.m: 56";
-		rLen = 7;
-		rLoc = 1440;
-		rType = 0;
-		vrLen = 746;
-		vrLoc = 584;
-	};
 	94BC81F11188F6FF00799505 /* UISwitch-Extended.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {613, 392}}";
@@ -404,25 +369,6 @@
 			sepNavSelRange = "{246, 0}";
 			sepNavVisRange = "{0, 613}";
 		};
-	};
-	94BC81F81188F80600799505 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Request for member 'allowsEditing' in something not a structure or union";
-		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 61;
-		rType = 1;
-	};
-	94BC81F91188F80600799505 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
-		name = "ImagePickerController.m: 62";
-		rLen = 0;
-		rLoc = 1562;
-		rType = 0;
-		vrLen = 347;
-		vrLoc = 1404;
 	};
 	94BC81FC1188F81800799505 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -483,7 +429,7 @@
 		rLoc = 61;
 		rType = 1;
 	};
-	94BC82021188F81800799505 /* PBXTextBookmark */ = {
+	94BC821A1188FF6200799505 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
 		name = "ImagePickerController.m: 62";

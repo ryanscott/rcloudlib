@@ -310,7 +310,7 @@
 							<real>311</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>215 154 1007 624 0 0 1280 778 </string>
+						<string>222 154 1007 624 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -338,7 +338,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>94BC82021188F81800799505</string>
+										<string>94BC821A1188FF6200799505</string>
 										<key>history</key>
 										<array>
 											<string>94A00DEE11876F8900B43B73</string>
@@ -377,7 +377,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {674, 424}}</string>
 								<key>RubberWindowFrame</key>
-								<string>215 154 1007 624 0 0 1280 778 </string>
+								<string>222 154 1007 624 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -397,7 +397,7 @@
 								<key>Frame</key>
 								<string>{{0, 429}, {674, 154}}</string>
 								<key>RubberWindowFrame</key>
-								<string>215 154 1007 624 0 0 1280 778 </string>
+								<string>222 154 1007 624 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -565,7 +565,7 @@
 		<string>/Users/ryan/Projects/iPhone/rcloudlib/rcloudlib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>215 154 1007 624 0 0 1280 778 </string>
+	<string>222 154 1007 624 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
