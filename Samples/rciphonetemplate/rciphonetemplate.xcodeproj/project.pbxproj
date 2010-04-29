@@ -12,6 +12,25 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		94BC83BA1189FE2700799505 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83A51189FE2700799505 /* Util.m */; };
+		94BC83BB1189FE2700799505 /* rcloudlibconstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83A61189FE2700799505 /* rcloudlibconstants.m */; };
+		94BC83BC1189FE2700799505 /* UIControl-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83A81189FE2700799505 /* UIControl-Expanded.m */; };
+		94BC83BD1189FE2700799505 /* UITextView-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83A91189FE2700799505 /* UITextView-Expanded.m */; };
+		94BC83BE1189FE2700799505 /* UIViewController-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83AA1189FE2700799505 /* UIViewController-Expanded.m */; };
+		94BC83BF1189FE2700799505 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83AB1189FE2700799505 /* UIColor-Expanded.m */; };
+		94BC83C01189FE2700799505 /* UIView-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83AC1189FE2700799505 /* UIView-Expanded.m */; };
+		94BC83C11189FE2700799505 /* UIImage-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83AD1189FE2700799505 /* UIImage-Expanded.m */; };
+		94BC83C21189FE2700799505 /* UISwitch-Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83AE1189FE2700799505 /* UISwitch-Extended.m */; };
+		94BC83C31189FE2700799505 /* BitmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B01189FE2700799505 /* BitmapView.m */; };
+		94BC83C41189FE2700799505 /* FieldEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B11189FE2700799505 /* FieldEditController.m */; };
+		94BC83C51189FE2700799505 /* RCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B21189FE2700799505 /* RCLabel.m */; };
+		94BC83C61189FE2700799505 /* CustomFontBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B31189FE2700799505 /* CustomFontBase.m */; };
+		94BC83C71189FE2700799505 /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B41189FE2700799505 /* ImagePickerController.m */; };
+		94BC83C81189FE2700799505 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B51189FE2700799505 /* ImageButton.m */; };
+		94BC83C91189FE2700799505 /* BusyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B61189FE2700799505 /* BusyViewController.m */; };
+		94BC83CA1189FE2700799505 /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BC83B71189FE2700799505 /* RoundedView.m */; };
+		94BC83CB1189FE2700799505 /* 1_bar_table_transcorners.png in Resources */ = {isa = PBXBuildFile; fileRef = 94BC83B91189FE2700799505 /* 1_bar_table_transcorners.png */; };
+		94BC83CD1189FE4400799505 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BC83CC1189FE4400799505 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +43,43 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* rciphonetemplate_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rciphonetemplate_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* rciphonetemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rciphonetemplate-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		94BC83901189FE2700799505 /* rcloudlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rcloudlib.h; path = ../../include/rcloudlib.h; sourceTree = SOURCE_ROOT; };
+		94BC83911189FE2700799505 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		94BC83921189FE2700799505 /* rcloudlibconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlibconstants.h; sourceTree = "<group>"; };
+		94BC83941189FE2700799505 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl-Expanded.h"; path = "../../include/UIControl-Expanded.h"; sourceTree = SOURCE_ROOT; };
+		94BC83951189FE2700799505 /* UITextView-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextView-Expanded.h"; path = "../../include/UITextView-Expanded.h"; sourceTree = SOURCE_ROOT; };
+		94BC83961189FE2700799505 /* UIViewController-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController-Expanded.h"; path = "../../include/UIViewController-Expanded.h"; sourceTree = SOURCE_ROOT; };
+		94BC83971189FE2700799505 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-Expanded.h"; path = "../../include/UIColor-Expanded.h"; sourceTree = SOURCE_ROOT; };
+		94BC83981189FE2700799505 /* UIView-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView-Expanded.h"; path = "../../include/UIView-Expanded.h"; sourceTree = SOURCE_ROOT; };
+		94BC83991189FE2700799505 /* UIImage-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage-Expanded.h"; path = "../../include/UIImage-Expanded.h"; sourceTree = SOURCE_ROOT; };
+		94BC839A1189FE2700799505 /* UISwitch-Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UISwitch-Extended.h"; path = "../../include/UISwitch-Extended.h"; sourceTree = SOURCE_ROOT; };
+		94BC839C1189FE2700799505 /* BitmapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapView.h; path = ../../include/BitmapView.h; sourceTree = SOURCE_ROOT; };
+		94BC839D1189FE2700799505 /* FieldEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldEditController.h; path = ../../include/FieldEditController.h; sourceTree = SOURCE_ROOT; };
+		94BC839E1189FE2700799505 /* RCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCLabel.h; path = ../../include/RCLabel.h; sourceTree = SOURCE_ROOT; };
+		94BC839F1189FE2700799505 /* CustomFontBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomFontBase.h; path = ../../include/CustomFontBase.h; sourceTree = SOURCE_ROOT; };
+		94BC83A01189FE2700799505 /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagePickerController.h; path = ../../include/ImagePickerController.h; sourceTree = SOURCE_ROOT; };
+		94BC83A11189FE2700799505 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageButton.h; path = ../../include/ImageButton.h; sourceTree = SOURCE_ROOT; };
+		94BC83A21189FE2700799505 /* BusyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusyViewController.h; path = ../../include/BusyViewController.h; sourceTree = SOURCE_ROOT; };
+		94BC83A31189FE2700799505 /* RoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundedView.h; path = ../../include/RoundedView.h; sourceTree = SOURCE_ROOT; };
+		94BC83A51189FE2700799505 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = ../../Classes/Util.m; sourceTree = SOURCE_ROOT; };
+		94BC83A61189FE2700799505 /* rcloudlibconstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = rcloudlibconstants.m; path = ../../Classes/rcloudlibconstants.m; sourceTree = SOURCE_ROOT; };
+		94BC83A81189FE2700799505 /* UIControl-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl-Expanded.m"; path = "../../Classes/UIControl-Expanded.m"; sourceTree = SOURCE_ROOT; };
+		94BC83A91189FE2700799505 /* UITextView-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView-Expanded.m"; path = "../../Classes/UITextView-Expanded.m"; sourceTree = SOURCE_ROOT; };
+		94BC83AA1189FE2700799505 /* UIViewController-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController-Expanded.m"; path = "../../Classes/UIViewController-Expanded.m"; sourceTree = SOURCE_ROOT; };
+		94BC83AB1189FE2700799505 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "../../Classes/UIColor-Expanded.m"; sourceTree = SOURCE_ROOT; };
+		94BC83AC1189FE2700799505 /* UIView-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView-Expanded.m"; path = "../../Classes/UIView-Expanded.m"; sourceTree = SOURCE_ROOT; };
+		94BC83AD1189FE2700799505 /* UIImage-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Expanded.m"; path = "../../Classes/UIImage-Expanded.m"; sourceTree = SOURCE_ROOT; };
+		94BC83AE1189FE2700799505 /* UISwitch-Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISwitch-Extended.m"; path = "../../Classes/UISwitch-Extended.m"; sourceTree = SOURCE_ROOT; };
+		94BC83B01189FE2700799505 /* BitmapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapView.m; path = ../../Classes/BitmapView.m; sourceTree = SOURCE_ROOT; };
+		94BC83B11189FE2700799505 /* FieldEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FieldEditController.m; path = ../../Classes/FieldEditController.m; sourceTree = SOURCE_ROOT; };
+		94BC83B21189FE2700799505 /* RCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCLabel.m; path = ../../Classes/RCLabel.m; sourceTree = SOURCE_ROOT; };
+		94BC83B31189FE2700799505 /* CustomFontBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomFontBase.m; path = ../../Classes/CustomFontBase.m; sourceTree = SOURCE_ROOT; };
+		94BC83B41189FE2700799505 /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePickerController.m; path = ../../Classes/ImagePickerController.m; sourceTree = SOURCE_ROOT; };
+		94BC83B51189FE2700799505 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageButton.m; path = ../../Classes/ImageButton.m; sourceTree = SOURCE_ROOT; };
+		94BC83B61189FE2700799505 /* BusyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusyViewController.m; path = ../../Classes/BusyViewController.m; sourceTree = SOURCE_ROOT; };
+		94BC83B71189FE2700799505 /* RoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundedView.m; path = ../../Classes/RoundedView.m; sourceTree = SOURCE_ROOT; };
+		94BC83B91189FE2700799505 /* 1_bar_table_transcorners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1_bar_table_transcorners.png; path = ../../Images/1_bar_table_transcorners.png; sourceTree = SOURCE_ROOT; };
+		94BC83CC1189FE4400799505 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +90,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				94BC83CD1189FE4400799505 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +150,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				94BC83CC1189FE4400799505 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,8 +158,120 @@
 		94BC83351189FD5100799505 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				94BC838D1189FE0F00799505 /* rcloudlib */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		94BC838D1189FE0F00799505 /* rcloudlib */ = {
+			isa = PBXGroup;
+			children = (
+				94BC838E1189FE2700799505 /* include */,
+				94BC83A41189FE2700799505 /* Classes */,
+				94BC83B81189FE2700799505 /* Resources */,
+			);
+			name = rcloudlib;
+			sourceTree = "<group>";
+		};
+		94BC838E1189FE2700799505 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				94BC838F1189FE2700799505 /* Public */,
+				94BC839B1189FE2700799505 /* Controls */,
+				94BC83931189FE2700799505 /* Class Extensions */,
+				94BC83911189FE2700799505 /* Util.h */,
+				94BC83921189FE2700799505 /* rcloudlibconstants.h */,
+			);
+			name = include;
+			path = ../../include;
+			sourceTree = SOURCE_ROOT;
+		};
+		94BC838F1189FE2700799505 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				94BC83901189FE2700799505 /* rcloudlib.h */,
+			);
+			name = Public;
+			path = "../../../../../../../$(SOURCE_ROOT)";
+			sourceTree = SOURCE_ROOT;
+		};
+		94BC83931189FE2700799505 /* Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94BC83941189FE2700799505 /* UIControl-Expanded.h */,
+				94BC83951189FE2700799505 /* UITextView-Expanded.h */,
+				94BC83961189FE2700799505 /* UIViewController-Expanded.h */,
+				94BC83971189FE2700799505 /* UIColor-Expanded.h */,
+				94BC83981189FE2700799505 /* UIView-Expanded.h */,
+				94BC83991189FE2700799505 /* UIImage-Expanded.h */,
+				94BC839A1189FE2700799505 /* UISwitch-Extended.h */,
+			);
+			name = "Class Extensions";
+			path = "../../../../../../../$(SOURCE_ROOT)";
+			sourceTree = SOURCE_ROOT;
+		};
+		94BC839B1189FE2700799505 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				94BC839C1189FE2700799505 /* BitmapView.h */,
+				94BC839D1189FE2700799505 /* FieldEditController.h */,
+				94BC839E1189FE2700799505 /* RCLabel.h */,
+				94BC839F1189FE2700799505 /* CustomFontBase.h */,
+				94BC83A01189FE2700799505 /* ImagePickerController.h */,
+				94BC83A11189FE2700799505 /* ImageButton.h */,
+				94BC83A21189FE2700799505 /* BusyViewController.h */,
+				94BC83A31189FE2700799505 /* RoundedView.h */,
+			);
+			name = Controls;
+			path = "../../../../../../../$(SOURCE_ROOT)";
+			sourceTree = SOURCE_ROOT;
+		};
+		94BC83A41189FE2700799505 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94BC83AF1189FE2700799505 /* Controls */,
+				94BC83A71189FE2700799505 /* Class Extensions */,
+				94BC83A51189FE2700799505 /* Util.m */,
+				94BC83A61189FE2700799505 /* rcloudlibconstants.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		94BC83A71189FE2700799505 /* Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94BC83A81189FE2700799505 /* UIControl-Expanded.m */,
+				94BC83A91189FE2700799505 /* UITextView-Expanded.m */,
+				94BC83AA1189FE2700799505 /* UIViewController-Expanded.m */,
+				94BC83AB1189FE2700799505 /* UIColor-Expanded.m */,
+				94BC83AC1189FE2700799505 /* UIView-Expanded.m */,
+				94BC83AD1189FE2700799505 /* UIImage-Expanded.m */,
+				94BC83AE1189FE2700799505 /* UISwitch-Extended.m */,
+			);
+			name = "Class Extensions";
+			sourceTree = "<group>";
+		};
+		94BC83AF1189FE2700799505 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				94BC83B01189FE2700799505 /* BitmapView.m */,
+				94BC83B11189FE2700799505 /* FieldEditController.m */,
+				94BC83B21189FE2700799505 /* RCLabel.m */,
+				94BC83B31189FE2700799505 /* CustomFontBase.m */,
+				94BC83B41189FE2700799505 /* ImagePickerController.m */,
+				94BC83B51189FE2700799505 /* ImageButton.m */,
+				94BC83B61189FE2700799505 /* BusyViewController.m */,
+				94BC83B71189FE2700799505 /* RoundedView.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		94BC83B81189FE2700799505 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94BC83B91189FE2700799505 /* 1_bar_table_transcorners.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BC83CB1189FE2700799505 /* 1_bar_table_transcorners.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +329,23 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* rciphonetemplateAppDelegate.m in Sources */,
+				94BC83BA1189FE2700799505 /* Util.m in Sources */,
+				94BC83BB1189FE2700799505 /* rcloudlibconstants.m in Sources */,
+				94BC83BC1189FE2700799505 /* UIControl-Expanded.m in Sources */,
+				94BC83BD1189FE2700799505 /* UITextView-Expanded.m in Sources */,
+				94BC83BE1189FE2700799505 /* UIViewController-Expanded.m in Sources */,
+				94BC83BF1189FE2700799505 /* UIColor-Expanded.m in Sources */,
+				94BC83C01189FE2700799505 /* UIView-Expanded.m in Sources */,
+				94BC83C11189FE2700799505 /* UIImage-Expanded.m in Sources */,
+				94BC83C21189FE2700799505 /* UISwitch-Extended.m in Sources */,
+				94BC83C31189FE2700799505 /* BitmapView.m in Sources */,
+				94BC83C41189FE2700799505 /* FieldEditController.m in Sources */,
+				94BC83C51189FE2700799505 /* RCLabel.m in Sources */,
+				94BC83C61189FE2700799505 /* CustomFontBase.m in Sources */,
+				94BC83C71189FE2700799505 /* ImagePickerController.m in Sources */,
+				94BC83C81189FE2700799505 /* ImageButton.m in Sources */,
+				94BC83C91189FE2700799505 /* BusyViewController.m in Sources */,
+				94BC83CA1189FE2700799505 /* RoundedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

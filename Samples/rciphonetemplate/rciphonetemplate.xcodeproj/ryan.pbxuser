@@ -24,6 +24,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 94BC82D31189F7DC00799505 /* rciphonetemplate */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* rciphonetemplate */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* rciphonetemplate */,
+		);
 		codeSenseManager = 94BC82EE1189F7F400799505 /* Code sense */;
 		executables = (
 			94BC82D31189F7DC00799505 /* rciphonetemplate */,
@@ -74,6 +77,18 @@
 			94BC833B1189FD8B00799505 /* PBXTextBookmark */ = 94BC833B1189FD8B00799505 /* PBXTextBookmark */;
 			94BC833C1189FD8B00799505 /* PBXTextBookmark */ = 94BC833C1189FD8B00799505 /* PBXTextBookmark */;
 			94BC833D1189FD8B00799505 /* PBXTextBookmark */ = 94BC833D1189FD8B00799505 /* PBXTextBookmark */;
+			94BC83D31189FE5B00799505 /* XCBuildMessageTextBookmark */ = 94BC83D31189FE5B00799505 /* XCBuildMessageTextBookmark */;
+			94BC83D41189FE5B00799505 /* PBXTextBookmark */ = 94BC83D41189FE5B00799505 /* PBXTextBookmark */;
+			94BC83D71189FE6B00799505 /* PBXTextBookmark */ = 94BC83D71189FE6B00799505 /* PBXTextBookmark */;
+			94BC83D81189FE6B00799505 /* PBXTextBookmark */ = 94BC83D81189FE6B00799505 /* PBXTextBookmark */;
+			94BC83D91189FE6B00799505 /* PBXTextBookmark */ = 94BC83D91189FE6B00799505 /* PBXTextBookmark */;
+			94BC83DA1189FE6B00799505 /* PBXTextBookmark */ = 94BC83DA1189FE6B00799505 /* PBXTextBookmark */;
+			94BC83DB1189FE6B00799505 /* PBXTextBookmark */ = 94BC83DB1189FE6B00799505 /* PBXTextBookmark */;
+			94BC83DC1189FEC000799505 /* PBXTextBookmark */ = 94BC83DC1189FEC000799505 /* PBXTextBookmark */;
+			94BC83DD1189FEC000799505 /* PBXTextBookmark */ = 94BC83DD1189FEC000799505 /* PBXTextBookmark */;
+			94BC83DE1189FEC000799505 /* PlistBookmark */ = 94BC83DE1189FEC000799505 /* PlistBookmark */;
+			94BC83DF1189FEC000799505 /* PBXBookmark */ = 94BC83DF1189FEC000799505 /* PBXBookmark */;
+			94BC83E01189FEC000799505 /* PBXTextBookmark */ = 94BC83E01189FEC000799505 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 94BC82ED1189F7F400799505 /* Source Control */;
 		userBuildSettings = {
@@ -89,8 +104,8 @@
 	32CA4F630368D1EE00C91783 /* rciphonetemplate_Prefix.pch */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {879, 371}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 83}";
+			sepNavSelRange = "{98, 0}";
+			sepNavVisRange = "{0, 106}";
 		};
 	};
 	8D1107310486CEB800E47090 /* rciphonetemplate-Info.plist */ = {
@@ -156,7 +171,7 @@
 		isa = PBXTextBookmark;
 		fRef = 32CA4F630368D1EE00C91783 /* rciphonetemplate_Prefix.pch */;
 		name = "rciphonetemplate_Prefix.pch: 6";
-		rLen = 60;
+		rLen = 83;
 		rLoc = 16;
 		rType = 0;
 		vrLen = 195;
@@ -226,7 +241,7 @@
 		isa = PBXTextBookmark;
 		fRef = 32CA4F630368D1EE00C91783 /* rciphonetemplate_Prefix.pch */;
 		name = "rciphonetemplate_Prefix.pch: 6";
-		rLen = 60;
+		rLen = 83;
 		rLoc = 16;
 		rType = 0;
 		vrLen = 195;
@@ -330,6 +345,134 @@
 		rLoc = 416;
 		rType = 0;
 		vrLen = 875;
+		vrLoc = 0;
+	};
+	94BC83901189FE2700799505 /* rcloudlib.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {879, 371}}";
+			sepNavSelRange = "{419, 0}";
+			sepNavVisRange = "{0, 419}";
+		};
+	};
+	94BC83B61189FE2700799505 /* BusyViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {984, 3562}}";
+			sepNavSelRange = "{2990, 0}";
+			sepNavVisRange = "{0, 373}";
+		};
+	};
+	94BC83D31189FE5B00799505 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No '+viewWithFrame:color:' method found";
+		fRef = 94BC83B61189FE2700799505 /* BusyViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 102;
+		rType = 1;
+	};
+	94BC83D41189FE5B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83B61189FE2700799505 /* BusyViewController.m */;
+		name = "BusyViewController.m: 103";
+		rLen = 0;
+		rLoc = 2990;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 0;
+	};
+	94BC83D71189FE6B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8D1107310486CEB800E47090 /* rciphonetemplate-Info.plist */;
+		name = "rciphonetemplate-Info.plist: 12";
+		rLen = 0;
+		rLoc = 416;
+		rType = 0;
+		vrLen = 875;
+		vrLoc = 0;
+	};
+	94BC83D81189FE6B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* rciphonetemplateAppDelegate.h */;
+		name = "rciphonetemplateAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 0;
+	};
+	94BC83D91189FE6B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* rciphonetemplateAppDelegate.m */;
+		name = "rciphonetemplateAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 403;
+		vrLoc = 0;
+	};
+	94BC83DA1189FE6B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83B61189FE2700799505 /* BusyViewController.m */;
+		name = "BusyViewController.m: 103";
+		rLen = 0;
+		rLoc = 2990;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 2623;
+	};
+	94BC83DB1189FE6B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* rciphonetemplate_Prefix.pch */;
+		name = "rciphonetemplate_Prefix.pch: 4";
+		rLen = 0;
+		rLoc = 98;
+		rType = 0;
+		vrLen = 106;
+		vrLoc = 0;
+	};
+	94BC83DC1189FEC000799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* rciphonetemplate_Prefix.pch */;
+		name = "rciphonetemplate_Prefix.pch: 4";
+		rLen = 0;
+		rLoc = 98;
+		rType = 0;
+		vrLen = 106;
+		vrLoc = 0;
+	};
+	94BC83DD1189FEC000799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 244;
+		vrLoc = 0;
+	};
+	94BC83DE1189FEC000799505 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* rciphonetemplate-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/ryan/Projects/iPhone/rcloudlib/Samples/rciphonetemplate/rciphonetemplate-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	94BC83DF1189FEC000799505 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 94BC83901189FE2700799505 /* rcloudlib.h */;
+	};
+	94BC83E01189FEC000799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83901189FE2700799505 /* rcloudlib.h */;
+		name = "rcloudlib.h: 16";
+		rLen = 0;
+		rLoc = 419;
+		rType = 0;
+		vrLen = 419;
 		vrLoc = 0;
 	};
 }

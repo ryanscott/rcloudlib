@@ -268,6 +268,7 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>94BC83351189FD5100799505</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -275,8 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>7</integer>
+									<integer>10</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -300,7 +301,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>44 220 1148 552 0 0 1280 778 </string>
+						<string>234 212 1148 552 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>rciphonetemplate-Info.plist</string>
+								<string>rcloudlib.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,18 +327,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>rciphonetemplate-Info.plist</string>
+										<string>rcloudlib.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>94BC833D1189FD8B00799505</string>
+										<string>94BC83E01189FEC000799505</string>
 										<key>history</key>
 										<array>
-											<string>94BC83381189FD8B00799505</string>
-											<string>94BC83391189FD8B00799505</string>
-											<string>94BC833A1189FD8B00799505</string>
-											<string>94BC833B1189FD8B00799505</string>
-											<string>94BC833C1189FD8B00799505</string>
+											<string>94BC83D81189FE6B00799505</string>
+											<string>94BC83D91189FE6B00799505</string>
+											<string>94BC83DA1189FE6B00799505</string>
+											<string>94BC83DC1189FEC000799505</string>
+											<string>94BC83DD1189FEC000799505</string>
+											<string>94BC83DE1189FEC000799505</string>
+											<string>94BC83DF1189FEC000799505</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -351,7 +354,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {940, 403}}</string>
 								<key>RubberWindowFrame</key>
-								<string>44 220 1148 552 0 0 1280 778 </string>
+								<string>234 212 1148 552 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -371,7 +374,7 @@
 								<key>Frame</key>
 								<string>{{0, 408}, {940, 103}}</string>
 								<key>RubberWindowFrame</key>
-								<string>44 220 1148 552 0 0 1280 778 </string>
+								<string>234 212 1148 552 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -541,7 +544,7 @@
 		<string>/Users/ryan/Projects/iPhone/rcloudlib/Samples/rciphonetemplate/rciphonetemplate.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>44 220 1148 552 0 0 1280 778 </string>
+	<string>234 212 1148 552 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -562,23 +565,25 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>BusyViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {500, 218}}</string>
+								<string>{{0, 0}, {1045, 258}}</string>
 								<key>RubberWindowFrame</key>
-								<string>141 210 500 500 0 0 1280 778 </string>
+								<string>141 170 1045 540 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>218pt</string>
+							<string>258pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -593,9 +598,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 223}, {500, 236}}</string>
+								<string>{{0, 263}, {1045, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>141 210 500 500 0 0 1280 778 </string>
+								<string>141 170 1045 540 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -604,7 +609,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>459pt</string>
+					<string>499pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -627,7 +632,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>141 210 500 500 0 0 1280 778 </string>
+			<string>141 170 1045 540 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>94BC82E41189F7F400799505</string>
 			<key>WindowToolIsVisible</key>
