@@ -78,6 +78,7 @@
 		94AFCF3C102643710025821E /* rcloudlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rcloudlib.h; sourceTree = "<group>"; };
 		94BC81F11188F6FF00799505 /* UISwitch-Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch-Extended.h"; sourceTree = "<group>"; };
 		94BC81F31188F70A00799505 /* UISwitch-Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISwitch-Extended.m"; path = "Classes/UISwitch-Extended.m"; sourceTree = "<group>"; };
+		94BC83071189FB5400799505 /* Additional plist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Additional plist.txt"; sourceTree = "<group>"; };
 		94C537341161949D00DAA07C /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
 		94C53737116194B100DAA07C /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBAccess.m; path = Classes/DBAccess.m; sourceTree = SOURCE_ROOT; };
 		94E657AD1152DECF00404952 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl-Expanded.h"; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		94094274110A464200F5D00A /* Other Files */ = {
 			isa = PBXGroup;
 			children = (
+				94BC83071189FB5400799505 /* Additional plist.txt */,
 				94854582111A4A6900B8901F /* License.txt */,
 				94094276110A468500F5D00A /* Readme.txt */,
 				94854581111A4A6900B8901F /* ControllerTemplates.txt */,

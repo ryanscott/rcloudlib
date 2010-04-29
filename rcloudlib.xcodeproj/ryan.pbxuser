@@ -33,8 +33,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 294188744;
-			PBXWorkspaceStateSaveDate = 294188744;
+			PBXPerProjectTemplateStateSaveDate = 294255432;
+			PBXWorkspaceStateSaveDate = 294255432;
 		};
 		perUserProjectItems = {
 			94A00DEE11876F8900B43B73 /* PBXTextBookmark */ = 94A00DEE11876F8900B43B73 /* PBXTextBookmark */;
@@ -58,9 +58,10 @@
 			94BC81FD1188F81800799505 /* PBXTextBookmark */ = 94BC81FD1188F81800799505 /* PBXTextBookmark */;
 			94BC81FE1188F81800799505 /* PBXTextBookmark */ = 94BC81FE1188F81800799505 /* PBXTextBookmark */;
 			94BC81FF1188F81800799505 /* PBXTextBookmark */ = 94BC81FF1188F81800799505 /* PBXTextBookmark */;
-			94BC82001188F81800799505 /* PBXTextBookmark */ = 94BC82001188F81800799505 /* PBXTextBookmark */;
-			94BC82011188F81800799505 /* XCBuildMessageTextBookmark */ = 94BC82011188F81800799505 /* XCBuildMessageTextBookmark */;
-			94BC821A1188FF6200799505 /* PBXTextBookmark */ = 94BC821A1188FF6200799505 /* PBXTextBookmark */;
+			94BC83081189FB7300799505 /* PBXTextBookmark */ = 94BC83081189FB7300799505 /* PBXTextBookmark */;
+			94BC83091189FB7300799505 /* PBXTextBookmark */ = 94BC83091189FB7300799505 /* PBXTextBookmark */;
+			94BC830A1189FB7300799505 /* PBXBookmark */ = 94BC830A1189FB7300799505 /* PBXBookmark */;
+			94BC830B1189FB7300799505 /* PBXTextBookmark */ = 94BC830B1189FB7300799505 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 94A1DEE41162CFCA007EEE75 /* Source Control */;
 		userBuildSettings = {
@@ -287,9 +288,9 @@
 	};
 	94AFCF1910263F8F0025821E /* ImagePickerController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {804, 5486}}";
+			sepNavIntBoundsRect = "{{0, 0}, {775, 5512}}";
 			sepNavSelRange = "{1562, 0}";
-			sepNavVisRange = "{1404, 347}";
+			sepNavVisRange = "{1271, 602}";
 		};
 	};
 	94AFCF36102642DB0025821E /* UIImage-Expanded.h */ = {
@@ -410,34 +411,46 @@
 		vrLen = 75;
 		vrLoc = 0;
 	};
-	94BC82001188F81800799505 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */;
-		name = "UIColor-Expanded.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1545;
-		vrLoc = 0;
+	94BC83071189FB5400799505 /* Additional plist.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {613, 386}}";
+			sepNavSelRange = "{40, 84}";
+			sepNavVisRange = "{0, 163}";
+		};
 	};
-	94BC82011188F81800799505 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Request for member 'allowsEditing' in something not a structure or union";
-		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 61;
-		rType = 1;
-	};
-	94BC821A1188FF6200799505 /* PBXTextBookmark */ = {
+	94BC83081189FB7300799505 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */;
 		name = "ImagePickerController.m: 62";
 		rLen = 0;
 		rLoc = 1562;
 		rType = 0;
-		vrLen = 616;
-		vrLoc = 1257;
+		vrLen = 602;
+		vrLoc = 1271;
+	};
+	94BC83091189FB7300799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */;
+		name = "UIColor-Expanded.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1499;
+		vrLoc = 0;
+	};
+	94BC830A1189FB7300799505 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 94BC83071189FB5400799505 /* Additional plist.txt */;
+	};
+	94BC830B1189FB7300799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83071189FB5400799505 /* Additional plist.txt */;
+		name = "Additional plist.txt: 3";
+		rLen = 84;
+		rLoc = 40;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
 	};
 	94E657AD1152DECF00404952 /* UIControl-Expanded.h */ = {
 		uiCtxt = {
@@ -448,9 +461,9 @@
 	};
 	94FA8AA51024E2A6009B89BB /* UIColor-Expanded.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {789, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {789, 702}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1545}";
+			sepNavVisRange = "{0, 1499}";
 		};
 	};
 	94FA8AA61024E2A6009B89BB /* Util.h */ = {
