@@ -54,18 +54,23 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 294255325;
-			PBXWorkspaceStateSaveDate = 294255325;
+			PBXPerProjectTemplateStateSaveDate = 294263688;
+			PBXWorkspaceStateSaveDate = 294263688;
 		};
 		perUserProjectItems = {
-			94BC83D81189FE6B00799505 /* PBXTextBookmark */ = 94BC83D81189FE6B00799505 /* PBXTextBookmark */;
-			94BC83D91189FE6B00799505 /* PBXTextBookmark */ = 94BC83D91189FE6B00799505 /* PBXTextBookmark */;
-			94BC83DA1189FE6B00799505 /* PBXTextBookmark */ = 94BC83DA1189FE6B00799505 /* PBXTextBookmark */;
-			94BC83DC1189FEC000799505 /* PBXTextBookmark */ = 94BC83DC1189FEC000799505 /* PBXTextBookmark */;
-			94BC83DD1189FEC000799505 /* PBXTextBookmark */ = 94BC83DD1189FEC000799505 /* PBXTextBookmark */;
-			94BC83DE1189FEC000799505 /* PlistBookmark */ = 94BC83DE1189FEC000799505 /* PlistBookmark */;
-			94BC83DF1189FEC000799505 /* PBXBookmark */ = 94BC83DF1189FEC000799505 /* PBXBookmark */;
-			94BC83E1118A064700799505 /* PBXTextBookmark */ = 94BC83E1118A064700799505 /* PBXTextBookmark */;
+			94BC83D81189FE6B00799505 = 94BC83D81189FE6B00799505 /* PBXTextBookmark */;
+			94BC83D91189FE6B00799505 = 94BC83D91189FE6B00799505 /* PBXTextBookmark */;
+			94BC83DA1189FE6B00799505 = 94BC83DA1189FE6B00799505 /* PBXTextBookmark */;
+			94BC83DC1189FEC000799505 = 94BC83DC1189FEC000799505 /* PBXTextBookmark */;
+			94BC83DD1189FEC000799505 = 94BC83DD1189FEC000799505 /* PBXTextBookmark */;
+			94BC83DE1189FEC000799505 = 94BC83DE1189FEC000799505 /* PlistBookmark */;
+			94BC83DF1189FEC000799505 = 94BC83DF1189FEC000799505 /* PBXBookmark */;
+			94BC83E1118A064700799505 = 94BC83E1118A064700799505 /* PBXTextBookmark */;
+			94BC8446118A1C1B00799505 /* XCBuildMessageTextBookmark */ = 94BC8446118A1C1B00799505 /* XCBuildMessageTextBookmark */;
+			94BC8447118A1C1B00799505 /* PBXTextBookmark */ = 94BC8447118A1C1B00799505 /* PBXTextBookmark */;
+			94BC8449118A1C1C00799505 /* PBXTextBookmark */ = 94BC8449118A1C1C00799505 /* PBXTextBookmark */;
+			94BC844A118A1C1C00799505 /* XCBuildMessageTextBookmark */ = 94BC844A118A1C1C00799505 /* XCBuildMessageTextBookmark */;
+			94BC844B118A1C1C00799505 /* PBXTextBookmark */ = 94BC844B118A1C1C00799505 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 94BC82ED1189F7F400799505 /* Source Control */;
 		userBuildSettings = {
@@ -136,9 +141,16 @@
 	};
 	94BC83901189FE2700799505 /* rcloudlib.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {879, 371}}";
+			sepNavIntBoundsRect = "{{0, 0}, {879, 367}}";
 			sepNavSelRange = "{419, 0}";
 			sepNavVisRange = "{0, 419}";
+		};
+	};
+	94BC83AB1189FE2700799505 /* UIColor-Expanded.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {879, 10439}}";
+			sepNavSelRange = "{10920, 0}";
+			sepNavVisRange = "{10410, 895}";
 		};
 	};
 	94BC83B61189FE2700799505 /* BusyViewController.m */ = {
@@ -207,7 +219,7 @@
 		);
 		name = "/Users/ryan/Projects/iPhone/rcloudlib/Samples/rciphonetemplate/rciphonetemplate-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	94BC83DF1189FEC000799505 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -222,5 +234,53 @@
 		rType = 0;
 		vrLen = 419;
 		vrLoc = 0;
+	};
+	94BC8446118A1C1B00799505 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Declaration of 'a' shadows a previous local";
+		fRef = 94BC83AB1189FE2700799505 /* UIColor-Expanded.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 372;
+		rType = 1;
+	};
+	94BC8447118A1C1B00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83AB1189FE2700799505 /* UIColor-Expanded.m */;
+		name = "UIColor-Expanded.m: 376";
+		rLen = 0;
+		rLoc = 11051;
+		rType = 0;
+		vrLen = 578;
+		vrLoc = 10654;
+	};
+	94BC8449118A1C1C00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83901189FE2700799505 /* rcloudlib.h */;
+		name = "rcloudlib.h: 16";
+		rLen = 0;
+		rLoc = 419;
+		rType = 0;
+		vrLen = 419;
+		vrLoc = 0;
+	};
+	94BC844A118A1C1C00799505 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Declaration of 'a' shadows a previous local";
+		fRef = 94BC83AB1189FE2700799505 /* UIColor-Expanded.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 372;
+		rType = 1;
+	};
+	94BC844B118A1C1C00799505 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 94BC83AB1189FE2700799505 /* UIColor-Expanded.m */;
+		name = "UIColor-Expanded.m: 373";
+		rLen = 0;
+		rLoc = 10920;
+		rType = 0;
+		vrLen = 895;
+		vrLoc = 10410;
 	};
 }
