@@ -71,6 +71,7 @@
 			94BC8449118A1C1C00799505 /* PBXTextBookmark */ = 94BC8449118A1C1C00799505 /* PBXTextBookmark */;
 			94BC844A118A1C1C00799505 /* XCBuildMessageTextBookmark */ = 94BC844A118A1C1C00799505 /* XCBuildMessageTextBookmark */;
 			94BC844B118A1C1C00799505 /* PBXTextBookmark */ = 94BC844B118A1C1C00799505 /* PBXTextBookmark */;
+			94BC84A6118B84AD00799505 /* PlistBookmark */ = 94BC84A6118B84AD00799505 /* PlistBookmark */;
 		};
 		sourceControlManager = 94BC82ED1189F7F400799505 /* Source Control */;
 		userBuildSettings = {
@@ -148,9 +149,9 @@
 	};
 	94BC83AB1189FE2700799505 /* UIColor-Expanded.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {879, 10439}}";
-			sepNavSelRange = "{10920, 0}";
-			sepNavVisRange = "{10410, 895}";
+			sepNavIntBoundsRect = "{{0, 0}, {984, 10387}}";
+			sepNavSelRange = "{11051, 0}";
+			sepNavVisRange = "{10654, 578}";
 		};
 	};
 	94BC83B61189FE2700799505 /* BusyViewController.m */ = {
@@ -282,5 +283,16 @@
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 10410;
+	};
+	94BC84A6118B84AD00799505 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* rciphonetemplate-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/ryan/Projects/iPhone/rcloudlib/Samples/rciphonetemplate/rciphonetemplate-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 }

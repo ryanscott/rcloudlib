@@ -271,6 +271,9 @@
 								<string>948209CC10460F820090483A</string>
 								<string>948209CD10460F950090483A</string>
 								<string>94AFCF38102642E70025821E</string>
+								<string>08FB77AEFE84172EC02AAC07</string>
+								<string>948209CE10460FB30090483A</string>
+								<string>94AFCF39102642F50025821E</string>
 								<string>940D585C116194090007EBD2</string>
 								<string>0867D69AFE84028FC02AAC07</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -278,9 +281,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
-									<integer>6</integer>
-									<integer>1</integer>
+									<integer>30</integer>
+									<integer>26</integer>
+									<integer>23</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -304,7 +307,7 @@
 							<real>311</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>218 154 1007 624 0 0 1280 778 </string>
+						<string>107 143 1007 624 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -320,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Additional plist.txt</string>
+								<string>UIColor-Expanded.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Additional plist.txt</string>
+										<string>UIColor-Expanded.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>94BC841A118A10C100799505</string>
+										<string>94BC84A5118B84A600799505</string>
 										<key>history</key>
 										<array>
 											<string>94A00DF011876F8900B43B73</string>
@@ -350,7 +353,11 @@
 											<string>94BC81FD1188F81800799505</string>
 											<string>94BC81FF1188F81800799505</string>
 											<string>94BC83081189FB7300799505</string>
-											<string>94BC830B1189FB7300799505</string>
+											<string>94BC84A0118B84A600799505</string>
+											<string>94BC84A1118B84A600799505</string>
+											<string>94BC84A2118B84A600799505</string>
+											<string>94BC84A3118B84A600799505</string>
+											<string>94BC84A4118B84A600799505</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -364,7 +371,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {674, 412}}</string>
 								<key>RubberWindowFrame</key>
-								<string>218 154 1007 624 0 0 1280 778 </string>
+								<string>107 143 1007 624 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -384,7 +391,7 @@
 								<key>Frame</key>
 								<string>{{0, 417}, {674, 166}}</string>
 								<key>RubberWindowFrame</key>
-								<string>218 154 1007 624 0 0 1280 778 </string>
+								<string>107 143 1007 624 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -552,7 +559,7 @@
 		<string>/Users/ryan/Projects/iPhone/rcloudlib/rcloudlib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>218 154 1007 624 0 0 1280 778 </string>
+	<string>107 143 1007 624 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

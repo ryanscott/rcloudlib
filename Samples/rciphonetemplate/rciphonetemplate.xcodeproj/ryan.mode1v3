@@ -230,8 +230,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -301,7 +299,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>33 181 1148 552 0 0 1280 778 </string>
+						<string>82 110 1148 552 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>UIColor-Expanded.m</string>
+								<string>rciphonetemplate-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +323,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>UIColor-Expanded.m</string>
+										<string>rciphonetemplate-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>94BC844B118A1C1C00799505</string>
+										<string>94BC84A6118B84AD00799505</string>
 										<key>history</key>
 										<array>
 											<string>94BC83D81189FE6B00799505</string>
@@ -338,8 +336,6 @@
 											<string>94BC83DC1189FEC000799505</string>
 											<string>94BC83DD1189FEC000799505</string>
 											<string>94BC83DE1189FEC000799505</string>
-											<string>94BC8449118A1C1C00799505</string>
-											<string>94BC844A118A1C1C00799505</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -353,7 +349,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {940, 399}}</string>
 								<key>RubberWindowFrame</key>
-								<string>33 181 1148 552 0 0 1280 778 </string>
+								<string>82 110 1148 552 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -373,7 +369,7 @@
 								<key>Frame</key>
 								<string>{{0, 404}, {940, 107}}</string>
 								<key>RubberWindowFrame</key>
-								<string>33 181 1148 552 0 0 1280 778 </string>
+								<string>82 110 1148 552 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -541,7 +537,7 @@
 		<string>/Users/ryan/Projects/iPhone/rcloudlib/Samples/rciphonetemplate/rciphonetemplate.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>33 181 1148 552 0 0 1280 778 </string>
+	<string>82 110 1148 552 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -557,28 +553,26 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>UIColor-Expanded.m</string>
+								<string>&lt;No Editor&gt;</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1045, 258}}</string>
+								<string>{{0, 0}, {1045, 0}}</string>
 								<key>RubberWindowFrame</key>
 								<string>141 170 1045 540 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>258pt</string>
+							<string>0pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -595,14 +589,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 263}, {1045, 236}}</string>
+								<string>{{0, 5}, {1045, 494}}</string>
 								<key>RubberWindowFrame</key>
 								<string>141 170 1045 540 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
 							<key>Proportion</key>
-							<string>236pt</string>
+							<string>494pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
