@@ -1,6 +1,8 @@
 	<key>UIPrerenderedIcon</key>
 	<false/>
-	<key>UIInterfaceOrientation</key>
-	<string>UIInterfaceOrientationPortrait</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
+
+old:
+	<key>UIInterfaceOrientation</key>
+	<string>UIInterfaceOrientationPortrait</string>
