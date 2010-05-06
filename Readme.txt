@@ -11,58 +11,26 @@ git@github.com:ryanscott/rcloudlib.git
 Setting up rcloudlib with a new iPhone project in XCode
 --
 
-There are three methods possible:
 
-1. add files from rcloudlib to your project as links, not copies (strongly advised)
-2. copy source files from rcloudlib project into your target project (only advised to protect against library changes)
-3. linking against a static library, which is described below (really not advised)
+There are two suggested methods possible:
 
-** previously, this used to work.  seems to not work anymore, now that I'm using and referencing constants in the library
-   I'm seeing linking errors.  not sure how it ever worked, maybe I have my setup wrong.  
-	 
-	 regardless, the soft-link method is now my standard setup.  have to manually add new files, but not a big problem.
-**	 
+1. add files from rcloudlib to your project as links, not copies (advised for projects you are actively developing)
+	- advantage: you will automatically get rcloudlib updates, as you pull updates down
+	- disadvantage: the rcloudlib files may change, and that may require you make changes to your code (usually very trivial)
+									this is typically only a problem whtn the project is not being actively worked on
+2. copy source files from rcloudlib project into your target project (advised to protect against library changes)
+	- advantage: you know that the rcloudlib files are not going to change out from under you
+	- disadvantage: you will not get updates, without manually updating your local copy, then re-copying the files into your project
 
-Header Search Paths:
-${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include
-
-source website:
-(http://www.amateurinmotion.com/articles/2009/02/08/creating-a-static-library-for-iphone.html)
-
-Linking against static library
-
-To link against a static library while continuing to work with both dependent application and static library we need to:
-
-    * Add a cross-project reference to static library in dependent project
-    * Add project to dependent project Target
-    * Add static library Product to “Link Binary With Libraries” Build Phase
-    * Set static library project as direct dependency to dependent project’s Target
-    * Add custom “Header Search Path” to point to static library build output folder
-
-Quite a list of tasks to create this setup but fortunately it’s easy to do. We will start with first.
-
-1. Drag blue LibDemo project icon from “Groups & Files” and drop it inside Client project. Check “Client” in “Add To Targets” table, do not check “Copy items into destination group’s folder” in the sheet what will appear.
-
-2. To link binary with a static library we need to add it to “Linked Libraries” list for binary Target.
-
-Unfold LibDemo.xcodeproj and Targets → Client → Link Binary With Libraries. Drag libDemo.a to Link build phase.
-
-3.  To set libDemo library Target as dependency for Client Target, right click on Client Target, select Get Info then click on General tab. Click add button under Direct Dependencies list, select libDemo.
-
-4.  External headers in Xcode are searched using “Header Search Path” (and “User Header Search Path”) build variables. We need to add libDemo.a public header location to it.  Open “Client” Target info panel (Select Targets → Client and press ⌘I), type “header search” in search field under “Build” tab.
-
-Double-click on “Header Search Path” and add:
-
-${PROJECT_DIR}/../rcloudlib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include
-
-5. Add -ObjC to "Other Linker Flags" in the build configurations.  thanks to the following website:
-
-http://www.codingventures.com/2009/04/xcode-templates-for-iphone-static-libraries-with-unit-testing/
-
-The new project should now dynamically build rcloudlib as needed.
+Depending on your project, choose the integration method that makes the most sense.  I no longer recommend linkning rcloudlib as an externally built library, but if you want to do it anyway, rcloudlib does support it, and there are instructions on how to do it all over the web.
 
 Optional Instuctions:
 
 1.  Add rcloudlib.h to the new project PCH. This removes the need to manually include library headers.  
-		a mater of style and preference.  I personally really like it.
+		a mater of style and preference.  I personally really like it, and use it in every project in which I use rlcoudlib.
 		
+
+If you encounter problems or bugs, or have suggestions, contributions, please get involved and contribute to the lib.  I actively develop the code, and welcome any and all help and new ideas.
+
+Thanks
+Ryan

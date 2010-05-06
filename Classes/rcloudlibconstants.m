@@ -4,6 +4,7 @@
 const CGFloat kDefaultToolbarHeight = 44.0f;
 const CGFloat kDefaultTabBarHeight = 49.0f;
 const CGFloat kKeyboardHeight = 216.0f;
+// iPad portrait height, 264
 
 const CGFloat kDefaultTransitionDuration = 0.3f;
 const CGFloat kDefaultFastTransitionDuration = 0.2f;

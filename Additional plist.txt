@@ -3,6 +3,15 @@
 	<key>UIStatusBarHidden</key>
 	<true/>
 
+
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon72.png</string>
+		<string>Icon57.png</string>
+		<string>Icon48.png</string>
+		<string>Icon29.png</string>
+	</array>
+
 old:
 	<key>UIInterfaceOrientation</key>
 	<string>UIInterfaceOrientationPortrait</string>

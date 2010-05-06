@@ -73,7 +73,11 @@ static NSMutableDictionary* __imageCache = nil;
 
 +(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize
 {
-	if ( newSize.height > newSize.width )
+	if ( CGSizeEqualToSize( newSize, CGSizeZero ) )
+	{
+		return image;
+	}
+	else if ( newSize.height > newSize.width )
 	{
 		UIGraphicsBeginImageContext( newSize );
 		[image drawInRect:CGRectMake( 0, 0, newSize.width, newSize.height)];
