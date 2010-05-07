@@ -56,6 +56,12 @@ static DBAccess* gDBAccess = NULL;
 
 #pragma mark Initialization
 
+-(void)setDatabaseName
+{
+	// override this method, with your sqlite database name.
+	self._databaseName = @"behr.sqlite";
+}
+
 -(void)initDatabase
 {	
 	[self setDatabaseName];
@@ -89,11 +95,5 @@ static DBAccess* gDBAccess = NULL;
 #pragma mark Implementation Methods
 
 #pragma mark Template Methods
-
--(void)setDatabaseName
-{
-	// override this method, with your sqlite database name.
-	self._databaseName = @"behr.sqlite";
-}
 
 @end
