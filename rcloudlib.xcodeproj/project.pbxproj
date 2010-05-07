@@ -20,6 +20,8 @@
 		946F785C1051996900F765D1 /* FieldEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F785B1051996900F765D1 /* FieldEditController.m */; };
 		946F785E1051997100F765D1 /* FieldEditController.h in Headers */ = {isa = PBXBuildFile; fileRef = 946F785D1051997100F765D1 /* FieldEditController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		946F789A1051A0A300F765D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F78991051A0A300F765D1 /* QuartzCore.framework */; };
+		947BF2F81194C5720044AB96 /* DBAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 947BF2F61194C5720044AB96 /* DBAccess.h */; };
+		947BF2F91194C5720044AB96 /* DBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BF2F71194C5720044AB96 /* DBAccess.m */; };
 		948209D010460FCB0090483A /* UIViewController-Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 948209CF10460FCB0090483A /* UIViewController-Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948209D210460FD70090483A /* UIViewController-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 948209D110460FD70090483A /* UIViewController-Expanded.m */; };
 		94A007421181213800B43B73 /* BitmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A007411181213800B43B73 /* BitmapView.m */; };
@@ -64,6 +66,8 @@
 		946F785D1051997100F765D1 /* FieldEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldEditController.h; sourceTree = "<group>"; };
 		946F7866105199CB00F765D1 /* 1_bar_table_transcorners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1_bar_table_transcorners.png; path = Images/1_bar_table_transcorners.png; sourceTree = "<group>"; };
 		946F78991051A0A300F765D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		947BF2F61194C5720044AB96 /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBAccess.h; path = Components/DBAccess.h; sourceTree = SOURCE_ROOT; };
+		947BF2F71194C5720044AB96 /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBAccess.m; path = Components/DBAccess.m; sourceTree = SOURCE_ROOT; };
 		948209CF10460FCB0090483A /* UIViewController-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController-Expanded.h"; sourceTree = "<group>"; };
 		948209D110460FD70090483A /* UIViewController-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController-Expanded.m"; path = "Classes/UIViewController-Expanded.m"; sourceTree = "<group>"; };
 		94854581111A4A6900B8901F /* ControllerTemplates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ControllerTemplates.txt; sourceTree = "<group>"; };
@@ -79,8 +83,6 @@
 		94BC81F11188F6FF00799505 /* UISwitch-Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch-Extended.h"; sourceTree = "<group>"; };
 		94BC81F31188F70A00799505 /* UISwitch-Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISwitch-Extended.m"; path = "Classes/UISwitch-Extended.m"; sourceTree = "<group>"; };
 		94BC83071189FB5400799505 /* Additional plist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Additional plist.txt"; sourceTree = "<group>"; };
-		94C537341161949D00DAA07C /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
-		94C53737116194B100DAA07C /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBAccess.m; path = Classes/DBAccess.m; sourceTree = SOURCE_ROOT; };
 		94E657AD1152DECF00404952 /* UIControl-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl-Expanded.h"; sourceTree = "<group>"; };
 		94E657B11152DEEA00404952 /* UIControl-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl-Expanded.m"; path = "Classes/UIControl-Expanded.m"; sourceTree = "<group>"; };
 		94FA8A1A1024DECA009B89BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -180,8 +182,8 @@
 		940D585C116194090007EBD2 /* Optional Components */ = {
 			isa = PBXGroup;
 			children = (
-				94C537341161949D00DAA07C /* DBAccess.h */,
-				94C53737116194B100DAA07C /* DBAccess.m */,
+				947BF2F61194C5720044AB96 /* DBAccess.h */,
+				947BF2F71194C5720044AB96 /* DBAccess.m */,
 			);
 			name = "Optional Components";
 			path = include;
@@ -299,6 +301,7 @@
 				94E657AF1152DECF00404952 /* UIControl-Expanded.h in Headers */,
 				94A007441181215100B43B73 /* BitmapView.h in Headers */,
 				94BC81F21188F6FF00799505 /* UISwitch-Extended.h in Headers */,
+				947BF2F81194C5720044AB96 /* DBAccess.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +365,7 @@
 				94E657B21152DEEA00404952 /* UIControl-Expanded.m in Sources */,
 				94A007421181213800B43B73 /* BitmapView.m in Sources */,
 				94BC81F41188F70A00799505 /* UISwitch-Extended.m in Sources */,
+				947BF2F91194C5720044AB96 /* DBAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
