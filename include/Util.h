@@ -7,6 +7,22 @@
 #define RCLog(format, ...)
 #endif
 
+#ifdef DEBUG
+#define RCLogIf(condition, xx, ...) { if ((condition)) { \
+RCLog(xx, ##__VA_ARGS__); \
+} \
+}
+#else
+#define RCLogIf(condition, xx, ...)
+#endif
+
+#ifdef DEBUG
+#define RCAssert(xx) { if(!(xx)) { TTDPRINT(@"assert failed: %s", #xx); } }
+#else
+#define RCAssert(xx)
+#endif
+
+
 @interface Util : NSObject 
 {
 
