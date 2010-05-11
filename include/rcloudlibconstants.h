@@ -1,3 +1,5 @@
+#define IS_IPAD ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) 
+
 typedef enum
 {
 	VerticalAlignmentTop = 0, // default
