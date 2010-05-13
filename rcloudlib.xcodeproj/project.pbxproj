@@ -26,6 +26,8 @@
 		948209D210460FD70090483A /* UIViewController-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 948209D110460FD70090483A /* UIViewController-Expanded.m */; };
 		94A007421181213800B43B73 /* BitmapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A007411181213800B43B73 /* BitmapView.m */; };
 		94A007441181215100B43B73 /* BitmapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A007431181215100B43B73 /* BitmapView.h */; };
+		94AE86E8119B471900D49681 /* PhotoGallery.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AE86E6119B471900D49681 /* PhotoGallery.h */; };
+		94AE86E9119B471900D49681 /* PhotoGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AE86E7119B471900D49681 /* PhotoGallery.m */; };
 		94AFCF1810263F870025821E /* ImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AFCF1710263F870025821E /* ImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94AFCF1A10263F8F0025821E /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF1910263F8F0025821E /* ImagePickerController.m */; };
 		94AFCF35102642D40025821E /* UIImage-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFCF34102642D40025821E /* UIImage-Expanded.m */; };
@@ -75,6 +77,8 @@
 		94854583111A4A6900B8901F /* UIControlTemplates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIControlTemplates.txt; sourceTree = "<group>"; };
 		94A007411181213800B43B73 /* BitmapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitmapView.m; path = Classes/BitmapView.m; sourceTree = "<group>"; };
 		94A007431181215100B43B73 /* BitmapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapView.h; sourceTree = "<group>"; };
+		94AE86E6119B471900D49681 /* PhotoGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoGallery.h; path = ../Components/PhotoGallery.h; sourceTree = "<group>"; };
+		94AE86E7119B471900D49681 /* PhotoGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoGallery.m; path = ../Components/PhotoGallery.m; sourceTree = "<group>"; };
 		94AFCF1710263F870025821E /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
 		94AFCF1910263F8F0025821E /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagePickerController.m; path = Classes/ImagePickerController.m; sourceTree = "<group>"; };
 		94AFCF34102642D40025821E /* UIImage-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage-Expanded.m"; path = "Classes/UIImage-Expanded.m"; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 		940D585C116194090007EBD2 /* Optional Components */ = {
 			isa = PBXGroup;
 			children = (
+				94AE86E6119B471900D49681 /* PhotoGallery.h */,
+				94AE86E7119B471900D49681 /* PhotoGallery.m */,
 				947BF2F61194C5720044AB96 /* DBAccess.h */,
 				947BF2F71194C5720044AB96 /* DBAccess.m */,
 			);
@@ -302,6 +308,7 @@
 				94A007441181215100B43B73 /* BitmapView.h in Headers */,
 				94BC81F21188F6FF00799505 /* UISwitch-Extended.h in Headers */,
 				947BF2F81194C5720044AB96 /* DBAccess.h in Headers */,
+				94AE86E8119B471900D49681 /* PhotoGallery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +373,7 @@
 				94A007421181213800B43B73 /* BitmapView.m in Sources */,
 				94BC81F41188F70A00799505 /* UISwitch-Extended.m in Sources */,
 				947BF2F91194C5720044AB96 /* DBAccess.m in Sources */,
+				94AE86E9119B471900D49681 /* PhotoGallery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
