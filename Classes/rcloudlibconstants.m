@@ -6,6 +6,10 @@ const CGFloat kDefaultTabBarHeight = 49.0f;
 const CGFloat kKeyboardHeight = 216.0f;
 // iPad portrait height, 264
 
+// convenient default control sizes
+const CGFloat kDefaultButtonWidth = 80.0f;
+const CGFloat kDefaultButtonHeight = 30.0f;
+
 const CGFloat kDefaultTransitionDuration = 0.3f;
 const CGFloat kDefaultFastTransitionDuration = 0.2f;
 const CGFloat kDefaultFlipTransitionDuration = 0.7f;

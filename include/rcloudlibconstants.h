@@ -11,6 +11,10 @@ extern const CGFloat kDefaultToolbarHeight;
 extern const CGFloat kDefaultTabBarHeight;
 extern const CGFloat kKeyboardHeight;
 
+// convenient default control sizes
+extern const CGFloat kDefaultButtonWidth;
+extern const CGFloat kDefaultButtonHeight;
+
 extern const CGFloat kDefaultTransitionDuration;
 extern const CGFloat kDefaultFastTransitionDuration;
 extern const CGFloat kDefaultFlipTransitionDuration;
