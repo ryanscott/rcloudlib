@@ -8,9 +8,9 @@
 
 #import "PhotoGallery.h"
 
-@interface PhotoGallery (_PrivateMethods)
--(void)layoutGallery;
-@end
+//@interface PhotoGallery (_PrivateMethods)
+//-(void)layoutGallery;
+//@end
 
 @implementation PhotoGallery
 
@@ -18,6 +18,8 @@
 	
 @synthesize _lineCount;  
 @synthesize _thumbSize;
+@synthesize _viewSize;
+
 @synthesize _marginOffset; 
 @synthesize _vertical; 
 
@@ -31,8 +33,8 @@
 
 -(void)initScroller
 {
-	CGFloat width = self.view.frame.size.width;
-	CGFloat height = self.view.frame.size.height;
+	CGFloat width = self._viewSize.width;
+	CGFloat height = self._viewSize.height;
 	CGFloat x = 0.0f;
 	CGFloat y = 0.0f;
 	
@@ -50,22 +52,27 @@
 
 -(void)initControls
 {
-	self._vertical = true;
-
-	self._thumbSize = CGSizeMake(75.0f, 75.0f);
-	self._marginOffset = CGSizeMake(0.0f, 0.0f);
-	self._lineCount = 4;
-
-	self._thumbnails = nil;
-	
-	self._gallery = [[UIView alloc] init];
-	
-	[self initScroller];
+	if ( nil == self._gallery || nil == self._scroller )
+	{
+		self._gallery = [[UIView alloc] init];
+		[self initScroller];
+	}
 }
 
 -(void)initSelf
 {
 	self.title = @"Photo Gallery";
+
+	self._thumbnails = nil;	
+	self._gallery = nil;
+	self._scroller = nil;
+	
+	self._viewSize = kApplicationFrame.size;
+	self._thumbSize = CGSizeMake(75.0f, 75.0f);
+	self._lineCount = 4;
+	
+	self._vertical = true;
+	self._marginOffset = CGSizeMake(0.0f, 0.0f);
 }
 
 -(id)init
@@ -100,9 +107,13 @@
 	[self initControls];	
 	[self layoutGallery];
 	[self addSubviews];
-	if ( self._scroller.showsVerticalScrollIndicator	)
-		[self._scroller flashScrollIndicators];
 	[super viewDidLoad];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+	if ( self._scroller.showsVerticalScrollIndicator )
+		[self._scroller flashScrollIndicators];
 }
 
 #pragma mark Memory Management
@@ -167,6 +178,8 @@
 	self._scroller.contentSize = self._gallery.frame.size;
 	if ( self._scroller.contentSize.height > self._scroller.frame.size.height )
 		self._scroller.showsVerticalScrollIndicator = YES;
+	else
+		self._scroller.showsVerticalScrollIndicator = NO;
 	
 	int i = 0;
 	CGFloat x = spacing;
@@ -175,7 +188,10 @@
 	CGFloat height = self._thumbSize.height;
 	CGRect l_frame = CGRectMake(x, y, width, height);
 	
-	for ( UIView* i_thumb in _thumbnails )
+	for ( UIView* i_view in self._gallery.subviews )
+		[i_view removeFromSuperview];
+ 
+	for ( UIView* i_thumb in self._thumbnails )
 	{
 		i_thumb.frame = l_frame;
 		[self._gallery addSubview:i_thumb];

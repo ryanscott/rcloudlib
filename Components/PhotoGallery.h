@@ -14,6 +14,9 @@
 
 	NSUInteger _lineCount;  
 	CGSize _thumbSize;	
+
+	CGSize _viewSize;	
+
 	CGSize _marginOffset; // margin is automatically calculated.  these values are added, to make room if needed
 	bool _vertical; // defaults to yes, not supporting horizontal yet
 	
@@ -25,11 +28,15 @@
 
 @property (nonatomic, assign) NSUInteger _lineCount;  
 @property (nonatomic, assign) CGSize _thumbSize;	
+@property (nonatomic, assign) CGSize _viewSize;	
+
 @property (nonatomic, assign) CGSize _marginOffset;
 @property (nonatomic, assign) bool _vertical;	
 
 @property (nonatomic, retain) UIScrollView* _scroller;
 @property (nonatomic, retain) UIView* _gallery;
+
+-(void)layoutGallery;
 
 @end
 
