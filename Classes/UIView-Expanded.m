@@ -1,5 +1,6 @@
 #import "UIView-Expanded.h"
 #import <UIKit/UIViewController.h>
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (UIView_Expanded)
 
@@ -45,5 +46,19 @@
 	[self setFrame:new_frame];
 }
 
+-(UIImage*)getImageForView
+{
+	CGSize size = self.frame.size;
+
+	UIGraphicsBeginImageContext(size);
+
+	[self.layer renderInContext:UIGraphicsGetCurrentContext()];
+	UIImage* viewImage = UIGraphicsGetImageFromCurrentImageContext();
+
+	UIGraphicsEndImageContext();
+	
+	// hopefully this wont go out of scope before we return.  if so we'll have to autorelease it
+	return viewImage;
+}
 
 @end
