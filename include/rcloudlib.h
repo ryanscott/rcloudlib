@@ -1,4 +1,5 @@
 #import "rcloudlibconstants.h"
+#import "NSObject-Expanded.h"
 #import "Util.h"
 #import "UIColor-Expanded.h"
 #import "UIControl-Expanded.h"
